@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	padding: 12px 87px;
+	font-size: 20px;
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+	margin: 32px 154px 153px;
+
+	
+}
