@@ -85,15 +85,60 @@ function loopImages() {
     }
 }
 
-function addListenersOnImages() {
-    let listImages = document.getElementsByClassName("imgBanner");
+function loopImagesReverse() {
+    let img1 = document.getElementById("img1");
+    let img2 = document.getElementById("img2");
+    let img3 = document.getElementById("img3");
 
-    [].forEach.call(listImages, function(element) {
-        element.addEventListener("mouseover", function( event ) {
-            bannerInterval = 0;
-        });
-        element.addEventListener("mouseleave", function( event ) {
-            bannerInterval = 1000;
-        });
-    });
+    if (indexBanner === 3) {
+        img2.style.opacity = "0";
+
+        setTimeout(function() {
+            img3.style.right = "-800px";
+            img2.style.right = "800px";
+            img1.style.right = "0px";
+        }, 500);
+
+        setTimeout(function() {
+            img2.style.opacity = "1";
+        }, 1000);
+    }
+    else
+    if (indexBanner === 2) {
+        img3.style.opacity = "0";
+
+        setTimeout(function() {
+            img2.style.right = "0px";
+            img1.style.right = "-800px";
+            img3.style.right = "800px";
+        }, 500);
+
+        setTimeout(function() {
+            img3.style.opacity = "1";
+        }, 1000);
+    }
+    else
+    if (indexBanner === 1) {
+        img1.style.opacity = "0";
+
+        setTimeout(function() {
+            img1.style.right = "800px";
+            img3.style.right = "0px";
+            img2.style.right = "-800px";
+        }, 500);
+
+        setTimeout(function() {
+            img1.style.opacity = "1";
+        }, 1000);
+    }
+}
+
+document.getElementById("leftBannerNavi").onclick = function() { 
+    indexBanner = indexBanner - 1 < 1 ? 3 : indexBanner - 1;
+
+    loopImagesReverse();
+}
+
+document.getElementById("rightBannerNavi").onclick = function() {
+    loopImages();
 }
