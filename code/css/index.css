@@ -1,20 +1,37 @@
-* {
-	margin: 0;
-	padding: 0;
+body{
+	font-family: 'Open Sans', sans-serif;
 }
-a {
+
+header{
+	width: 100%;
+	background-color: #252C32;
+	display: flex;
+	height: 66px;
+}
+
+
+#header_nav a {
 	text-decoration: none;
 	padding: 12px 87px;
 	font-size: 20px;
+	color: #D6BF4B;
+
 }
 
-nav ul{
+#header_nav a:hover{ color: #C1D3D7;
+
+}
+
+#header_nav ul{
 	list-style-type: none;
 	display: flex;
-	margin: 32px 154px 153px;
-
-
+	margin: 30px auto 23px auto ;
+	
 }
+
+
+
+
 
 .mainBanner {
 	width: 800px;
