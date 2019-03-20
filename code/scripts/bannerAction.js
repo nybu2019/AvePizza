@@ -21,9 +21,9 @@ function setStartImagesPosition() {
     img2.style.opacity = "0";
 
     setTimeout(function() {
-        img1.style.top = "400px";
-        img3.style.top = "0px";
-        img2.style.top = "-400px";
+        img1.style.right = "800px";
+        img3.style.right = "0px";
+        img2.style.right = "-800px";
     }, 500);
 
     setTimeout(function() {
@@ -40,9 +40,9 @@ function loopImages() {
         img1.style.opacity = "0";
 
         setTimeout(function() {
-            img3.style.top = "400px";
-            img2.style.top = "0px";
-            img1.style.top = "-400px";
+            img3.style.right = "800px";
+            img2.style.right = "0px";
+            img1.style.right = "-800px";
         }, 500);
 
         setTimeout(function() {
@@ -56,9 +56,9 @@ function loopImages() {
         img3.style.opacity = "0";
 
         setTimeout(function() {
-            img2.style.top = "400px";
-            img1.style.top = "0px";
-            img3.style.top = "-400px";
+            img2.style.right = "800px";
+            img1.style.right = "0px";
+            img3.style.right = "-800px";
         }, 500);
 
         setTimeout(function() {
@@ -72,9 +72,9 @@ function loopImages() {
         img2.style.opacity = "0";
 
         setTimeout(function() {
-            img1.style.top = "400px";
-            img3.style.top = "0px";
-            img2.style.top = "-400px";
+            img1.style.right = "800px";
+            img3.style.right = "0px";
+            img2.style.right = "-800px";
         }, 500);
 
         setTimeout(function() {
