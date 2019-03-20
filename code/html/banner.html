@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>React App</title>
+  </head>
+  <body>
+
+    <div class="mainBanner" id="mainBanner">
+
+        <div class="imgBanner" id="img1">
+        </div>
+
+        <div class="imgBanner" id="img2">
+        </div>
+
+        <div class="imgBanner" id="img3">
+        </div>
+
+    </div>
+
+  </body>
+
+  <script>
+    document.body.onload = function() {
+
+      loopImgages();
+      setInterval(loopImgages, 12000);
+
+
+    }
+
+    function loopImgages() {
+      setTimeout(function() {
+        document.getElementById("img3").style.top = "400px";
+        document.getElementById("img3").style.zIndex = "3";
+        document.getElementById("img2").style.top = "0px";
+        document.getElementById("img2").style.zIndex = "1";
+        document.getElementById("img1").style.top = "-400px";
+        document.getElementById("img1").style.zIndex = "2";
+
+      }, 4000);
+
+      setTimeout(function() {
+        document.getElementById("img2").style.top = "400px";
+        document.getElementById("img2").style.zIndex = "2";
+        document.getElementById("img1").style.top = "0px";
+        document.getElementById("img1").style.zIndex = "3";
+        document.getElementById("img3").style.top = "-400px";
+        document.getElementById("img3").style.zIndex = "1";
+
+      }, 8000);
+
+      setTimeout(function() {
+        document.getElementById("img1").style.top = "400px";
+        document.getElementById("img1").style.zIndex = "2";
+        document.getElementById("img3").style.top = "0px";
+        document.getElementById("img3").style.zIndex = "3";
+        document.getElementById("img2").style.top = "-400px";
+        document.getElementById("img2").style.zIndex = "1";
+
+      }, 12000);
+    }
+  </script>
+
+</html>
