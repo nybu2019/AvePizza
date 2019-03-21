@@ -9,6 +9,11 @@
 
     <div class="mainBanner" id="mainBanner">
 
+        <div class="bannerNavi" id="leftBannerNavi">
+        </div>
+        <div class="bannerNavi" id="rightBannerNavi">
+        </div>
+
         <div class="imgBanner" id="img1">
         </div>
 
@@ -16,52 +21,12 @@
         </div>
 
         <div class="imgBanner" id="img3">
-        </div>
+        </div>  
 
     </div>
 
   </body>
 
-  <script>
-    document.body.onload = function() {
-
-      loopImgages();
-      setInterval(loopImgages, 12000);
-
-
-    }
-
-    function loopImgages() {
-      setTimeout(function() {
-        document.getElementById("img3").style.top = "400px";
-        document.getElementById("img3").style.zIndex = "3";
-        document.getElementById("img2").style.top = "0px";
-        document.getElementById("img2").style.zIndex = "1";
-        document.getElementById("img1").style.top = "-400px";
-        document.getElementById("img1").style.zIndex = "2";
-
-      }, 4000);
-
-      setTimeout(function() {
-        document.getElementById("img2").style.top = "400px";
-        document.getElementById("img2").style.zIndex = "2";
-        document.getElementById("img1").style.top = "0px";
-        document.getElementById("img1").style.zIndex = "3";
-        document.getElementById("img3").style.top = "-400px";
-        document.getElementById("img3").style.zIndex = "1";
-
-      }, 8000);
-
-      setTimeout(function() {
-        document.getElementById("img1").style.top = "400px";
-        document.getElementById("img1").style.zIndex = "2";
-        document.getElementById("img3").style.top = "0px";
-        document.getElementById("img3").style.zIndex = "3";
-        document.getElementById("img2").style.top = "-400px";
-        document.getElementById("img2").style.zIndex = "1";
-
-      }, 12000);
-    }
-  </script>
+  <script src="../scripts/bannerAction.js"></script>
 
 </html>
