@@ -1,0 +1,11 @@
+{
+    "pizzas": [
+        {
+            "title": "Neapolitan pizza",
+            "price": 127,
+            "config": "550g, 35sm",
+            "description": "Try so much and drink whiskey with Korinetska in bathroom",
+            "imagePath": "../pizzaItem/img.png"
+        }
+    ]
+}
