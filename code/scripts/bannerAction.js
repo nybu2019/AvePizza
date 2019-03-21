@@ -1,16 +1,15 @@
 let indexBanner = 1;
 let bannerInterval = 4000;
 
-window.onload = function() {
-    let bannerHandler = setInterval(loopImages, bannerInterval);
+let bannerHandler = setInterval(loopImages, bannerInterval);
 
-    document.getElementById("mainBanner").onmouseover = function() {
-        clearInterval(bannerHandler);
-    };
-    document.getElementById("mainBanner").onmouseleave = function() {
-        bannerHandler = setInterval(loopImages, bannerInterval);
-    };
-}
+document.getElementById("mainBanner").onmouseover = function() {
+    clearInterval(bannerHandler);
+};
+document.getElementById("mainBanner").onmouseleave = function() {
+    bannerHandler = setInterval(loopImages, bannerInterval);
+};
+
 
 function loopImages() {
     let img1 = document.getElementById("img1");

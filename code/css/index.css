@@ -159,12 +159,14 @@ header{
 
 .pizzaItems #pizzaTitle {
 	font-size: 25px;
-	position: absolute;
-	margin-left: 15px;
+	margin-top: 30px;
+	margin-left: 13px;
 }
 
 .pizzaItems #pizzaDesc {
-	visibility: hidden;
+	font-size: 15px;
+	margin-top: 60px;
+	margin-left: 13px;
 }
 
 #pizzaNavi {
@@ -172,4 +174,43 @@ header{
 	width: 100%;
 	height: 15%;
 	background-color: rgb(238, 98, 88);
+}
+
+.countNavi {
+	font-size: 30px;
+	position: absolute;
+	cursor: pointer;
+}
+
+#decCount {
+	left: 10px;
+	color: black;
+}
+
+#incCount {
+	left: 80px;
+	top: 3px;
+	color: black;
+}
+
+#countDiv {
+	position: absolute;
+	left: 33px;
+	top: 7px;
+	width: 30px;
+	height: 30px;
+	background-color: black;
+}
+#countDiv label {
+	position: absolute;
+	font-size: 25px;
+	color: white;
+	left: 8px;
+}
+
+#countPrice {
+	right: 0px;
+	top: 13px;
+	right: 15px;
+	font-size: 15px;
 }
