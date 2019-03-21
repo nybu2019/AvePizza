@@ -1,20 +1,32 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
 body{
 	font-family: 'Open Sans', sans-serif;
 }
 
 header{
-	width: 100%;
 	background-color: #252C32;
-	display: flex;
 	height: 66px;
+
+}
+
+#header_nav{
+	height: 66px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 
 #header_nav a {
 	text-decoration: none;
-	padding: 12px 87px;
 	font-size: 20px;
 	color: #D6BF4B;
+
+
 
 }
 
@@ -22,12 +34,11 @@ header{
 
 }
 
-#header_nav ul{
-	list-style-type: none;
-	display: flex;
-	margin: 30px auto 23px auto ;
+
+
+
 	
-}
+
 
 
 
