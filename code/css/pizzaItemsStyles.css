@@ -1,0 +1,135 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.pizzaContainer {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+}
+
+.pizzaContainer:hover .pizzaInfo{
+	bottom: 15%;
+}
+.pizzaContainer:hover .pizzaNavi{
+	bottom: 0px;
+}
+
+.pizzaContainer div {
+	position: absolute;
+	transition: all ease-in-out 300ms;
+	-webkit-transition: all ease-in-out 300ms;
+	-moz-transition: all ease-in-out 300ms;
+	-o-transition: all ease-in-out 300ms;
+}
+
+.pizzaImg {
+	width: 100%;
+	height: 100%;
+	background-image: url(../../resources/pizzaItem/pizza1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.pizzaInfo {
+	bottom: 0px;
+	width: 100%;
+	height: 35%;
+	opacity: 0.8;
+	background-color: black;
+}
+
+.pizzaContainer div p {
+	color: white;
+	position: absolute;
+}
+
+.pizzaConfig {
+	margin: 15px;
+	font-size: 10px;
+}
+
+.pizzaPrice {
+	right: 0;
+	top: 0;
+	margin: 15px;
+	font-size: 15px;
+}
+
+.pizzaTitle {
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 13px;
+}
+
+.pizzaDesc {
+	font-size: 15px;
+	margin-top: 60px;
+	margin-left: 13px;
+}
+
+.pizzaNavi {
+	bottom: -15%;
+	width: 100%;
+	height: 15%;
+	background-color: rgb(238, 98, 88);
+}
+
+.pizzaNavi p {
+	font-size: 30px;
+	position: absolute;
+}
+
+.pizzaNavi p, label{
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+ }
+
+.decCount {
+	left: 10px;
+}
+
+.incCount {
+	left: 80px;
+	top: 3px;
+}
+
+.pizzaNavi div {
+	position: absolute;
+	left: 33px;
+	top: 7px;
+	width: 30px;
+	height: 30px;
+	background-color: black;
+}
+
+.count {
+	position: absolute;
+	font-size: 25px;
+	color: white;
+	left: 7px;
+}
+
+.naviButton {
+	cursor: pointer;
+}
+
+.naviButton:hover {
+	color: black;
+}
+
+.pizzaContainer div .price {
+	right: 0px;
+	top: 13px;
+	right: 15px;
+	font-size: 20px;
+}
