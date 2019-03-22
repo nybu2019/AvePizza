@@ -155,7 +155,7 @@ body{
 }
 
 
-
+/*pizza item styles*/
 .pizzaContainer {
 	width: 300px;
 	height: 300px;
@@ -245,13 +245,11 @@ body{
 
 .decCount {
 	left: 10px;
-	color: black;
 }
 
 .incCount {
 	left: 80px;
 	top: 3px;
-	color: black;
 }
 
 .pizzaNavi div {
@@ -262,6 +260,7 @@ body{
 	height: 30px;
 	background-color: black;
 }
+
 .count {
 	position: absolute;
 	font-size: 25px;
@@ -271,6 +270,10 @@ body{
 
 .naviButton {
 	cursor: pointer;
+}
+
+.naviButton:hover {
+	color: black;
 }
 
 .pizzaContainer div .price {
