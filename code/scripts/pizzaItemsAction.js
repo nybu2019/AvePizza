@@ -2,6 +2,7 @@ let desCounElementt = document.getElementsByClassName("decCount")[0];
 let incCountElement = document.getElementsByClassName("incCount")[0];
 let priceElement = document.getElementsByClassName("price")[0];
 let countElement = document.getElementsByClassName("count")[0];
+let toBasketElement = document.getElementsByClassName("toBasket")[0];
 
 let pizzaPrice = 127;
 
@@ -19,6 +20,10 @@ incCountElement.onclick = function() {
     countElement.innerHTML = count + 1 === 100 ? 99 : count + 1;
     recountElementPrice();
     recountLeftMarginCountPizza();
+};
+
+toBasketElement.onclick = function() {
+    console.log("send to server");
 };
 
 function recountElementPrice() {
