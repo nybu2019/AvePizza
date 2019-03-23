@@ -7,8 +7,8 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-#tableRoot th{
-	padding: 20px;
+#tableRoot td{
+	padding: 10px;
 	
 }
 
@@ -37,7 +37,7 @@ body {
 .pizzaImg {
 	width: 100%;
 	height: 100%;
-	background-image: url(../../resources/pizzaItem/pizza1.jpg);
+	/* background-image: url(../../resources/pizzaItems/pizza1.jpg); */
 	background-position: center;
 	background-size: cover;
 }

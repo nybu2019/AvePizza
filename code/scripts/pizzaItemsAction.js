@@ -1,34 +1,77 @@
-createPizzaItem();
+let pizzas = [
+    {
+        config: "550g, 35sm",
+        price: "127",
+        title: "Neapolitan pizza",
+        description: "Try so much and drink whiskey with Korinetska in bathroom",
+        imagePath: "../../resources/pizzaItems/pizza1.jpg"
+    },
+    {
+        config: "550g, 35sm",
+        price: "127",
+        title: "Neapolitan pizza",
+        description: "Try so much and drink whiskey with Korinetska in bathroom",
+        imagePath: "../../resources/pizzaItems/pizza2.jpg"
+    },
+    {
+        config: "550g, 35sm",
+        price: "127",
+        title: "Neapolitan pizza",
+        description: "Try so much and drink whiskey with Korinetska in bathroom",
+        imagePath: "../../resources/pizzaItems/pizza3.jpg"
+    },
+    {
+        config: "550g, 35sm",
+        price: "127",
+        title: "Neapolitan pizza",
+        description: "Try so much and drink whiskey with Korinetska in bathroom",
+        imagePath: "../../resources/pizzaItems/pizza4.jpg"
+    },
+    {
+        config: "550g, 35sm",
+        price: "127",
+        title: "Neapolitan pizza",
+        description: "Try so much and drink whiskey with Korinetska in bathroom",
+        imagePath: "../../resources/pizzaItems/pizza5.jpg"
+    }
+];
 
-let decCounElement = document.getElementsByClassName("decCount")[0];
-let incCountElement = document.getElementsByClassName("incCount")[0];
-let priceElement = document.getElementsByClassName("price")[0];
-let countElement = document.getElementsByClassName("count")[0];
-let toBasketElement = document.getElementsByClassName("toBasket")[0];
-
-let pizzaPrice = 127;
-
-decCounElement.onclick = function() {
-    let count = parseInt(countElement.innerHTML);
-
-    countElement.innerHTML = count - 1 < 1 ? 1 : count - 1;
-    recountElementPrice();
-    recountLeftMarginCountPizza();
-};
-
-incCountElement.onclick = function() {
-    let count = parseInt(countElement.innerHTML);
-
-    countElement.innerHTML = count + 1 === 100 ? 99 : count + 1;
-    recountElementPrice();
-    recountLeftMarginCountPizza();
-};
-
-toBasketElement.onclick = function() {
-    console.log("send to server");
-};
+createItems();
 
 
+// decCounElement.onclick = function() {
+//     let count = parseInt(countElement.innerHTML);
+
+//     countElement.innerHTML = count - 1 < 1 ? 1 : count - 1;
+//     recountElementPrice();
+//     recountLeftMarginCountPizza();
+// };
+
+// incCountElement.onclick = function() {
+//     let count = parseInt(countElement.innerHTML);
+
+//     countElement.innerHTML = count + 1 === 100 ? 99 : count + 1;
+//     recountElementPrice();
+//     recountLeftMarginCountPizza();
+// };
+
+// toBasketElement.onclick = function() {
+//     console.log("send to server");
+// };
+
+function createItems() {
+    let x = 0;
+    let y = 0;
+
+    pizzas.forEach(function(element) {
+        createPizzaItem(element, x, y);
+        y++;
+        if (y === 3) {
+            y = 0;
+            x++;
+        }        
+    });
+}
 
 
 function recountElementPrice() {
@@ -44,10 +87,11 @@ function recountLeftMarginCountPizza() {
     }
 }
 
-function createPizzaItem() {
+function createPizzaItem(pizzaData, x, y) {
     let table = document.getElementById("tableRoot");
-    let row = table.rows[0];
-    let cell = row.insertCell(1);
+    let row = table.rows[x] === undefined ? table.insertRow(x) : table.rows[x];
+
+    let cell = row.insertCell(y);
 
 
     let pizzaContainer = document.createElement("div");
@@ -102,13 +146,35 @@ function createPizzaItem() {
 
     cell.appendChild(pizzaContainer);
 
-    pizzaConfig.innerHTML = "550g, 35sm";
-    pizzaPrice.innerHTML = "127 UAH";
-    pizzaTitle.innerHTML = "Neapolitan pizza";
-    pizzaDesc.innerHTML = "Try so much and drink whiskey with Korinetska in bathroom";
+    pizzaImg.style.backgroundImage = "url(" + pizzaData.imagePath + ")";
+
+    pizzaConfig.innerHTML = pizzaData.config;
+    pizzaPrice.innerHTML = pizzaData.price + " UAH";
+    pizzaTitle.innerHTML = pizzaData.title;
+    pizzaDesc.innerHTML = pizzaData.description;
     decCount.innerHTML = "-";
     count.innerHTML = "1";
     incCount.innerHTML = "+";
     toBasket.innerHTML = "To the basket";
-    price.innerHTML = "127 UAH";
+    price.innerHTML = pizzaData.price + " UAH";
+
+    decCount.onclick = function() {
+        let countPizza = parseInt(count.innerHTML) - 1 < 1 ? 1 : parseInt(count.innerHTML) - 1;
+        count.innerHTML = countPizza;
+        price.innerHTML = countPizza * pizzaData.price + " UAH";  
+        
+        count.style.left = parseInt(count.textContent) > 9 ? "0px" : "7px";
+    };
+
+    incCount.onclick = function() {
+        let countPizza = parseInt(count.innerHTML) + 1 > 99 ? 99 : parseInt(count.innerHTML) + 1;
+        count.innerHTML = countPizza;
+        price.innerHTML = countPizza * pizzaData.price + " UAH";  
+        
+        count.style.left = parseInt(count.textContent) > 9 ? "0px" : "7px";
+    };
+
+    toBasket.onclick = function() {
+        console.log("send to the server");
+    };
 }
