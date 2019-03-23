@@ -7,32 +7,42 @@
   </head>
   <body>
 
-    <div class="pizzaContainer">
+    <table id="tableRoot">
+        <tr>
+          <th>
 
-      <div class="pizzaImg"></div>
+        <div class="pizzaContainer">
 
-      <div class="pizzaInfo">
-        <p class="pizzaConfig">550g, 35sm</p>
-        <p class="pizzaPrice">127 UAH</p>
-        <p class="pizzaTitle">Neapolitan pizza</p>
-        <p class="pizzaDesc">Try so much and drink whiskey with Korinetska in bathroom</p>
-      </div>
+          <div class="pizzaImg"></div>
 
-      <div class="pizzaNavi">
-        <p class="naviButton decCount">-</p>
+          <div class="pizzaInfo">
+            <p class="pizzaConfig">550g, 35sm</p>
+            <p class="pizzaPrice">127 UAH</p>
+            <p class="pizzaTitle">Neapolitan pizza</p>
+            <p class="pizzaDesc">Try so much and drink whiskey with Korinetska in bathroom</p>
+          </div>
 
-        <div>
-          <label class="count">1</label>
+          <div class="pizzaNavi">
+            <p class="naviButton decCount">-</p>
+
+            <div>
+              <label class="count">1</label>
+            </div>
+
+            <p class="naviButton incCount">+</p>
+
+            <p class="naviButton toBasket">To the basket</p>
+
+            <p class="price">127 UAH</p>
+          </div>
+
         </div>
 
-        <p class="naviButton incCount">+</p>
+        </th>
+      </tr>
+    </table>
 
-        <p class="naviButton toBasket">To the basket</p>
-
-        <p class="price">127 UAH</p>
-      </div>
-
-    </div>
+    
 
   </body>
   <script src="../scripts/pizzaItemsAction.js"></script>
