@@ -12,6 +12,7 @@
 	width: 200px;
 	height: 200px;
 	background-image: url("../../resources/sideBarImages/logo.png");
+	cursor: pointer;
 }
 
 .sideBar ul {
@@ -27,7 +28,7 @@
 
 .sideBar ul li {
 	display: flex;
-	font-size: 30px;
+	font-size: 25px;
 	padding: 10px 0px;
 }
 
@@ -47,6 +48,15 @@
 	background-color: rgb(230, 84, 84);
 }
 
+.sideBar ul li:hover .icon {
+	transform: rotate(360deg);
+	
+	transition: all ease-in-out 1000ms;
+	-webkit-transition: all ease-in-out 1000ms;
+	-moz-transition: all ease-in-out 1000ms;
+	-o-transition: all ease-in-out 1000ms;
+}
+
 .sideBar ul li .pizza {
 	background-image: url("../../resources/sideBarImages/pizzaIcon.png");
 }
@@ -57,4 +67,12 @@
 
 .sideBar ul li .salades {
 	background-image: url("../../resources/sideBarImages/saladeIcon.png");
+}
+
+.sideBar ul li .actions {
+	background-image: url("../../resources/sideBarImages/actionIcon.png");
+}
+
+.sideBar ul li .constructor {
+	background-image: url("../../resources/sideBarImages/constructorIcon.png");
 }
