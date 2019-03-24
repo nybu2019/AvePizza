@@ -26,6 +26,14 @@ body {
 	bottom: 0px;
 }
 
+.pizzaContainer:hover .pizzaImg{
+	transform: scale(1.1);
+	transition: all ease-in-out 1000ms;
+	-webkit-transition: all ease-in-out 1000ms;
+	-moz-transition: all ease-in-out 1000ms;
+	-o-transition: all ease-in-out 1000ms;
+}
+
 .pizzaContainer div {
 	position: absolute;
 	transition: all ease-in-out 300ms;
@@ -39,7 +47,7 @@ body {
 	height: 100%;
 	/* background-image: url(../../resources/pizzaItems/pizza1.jpg); */
 	background-position: center;
-	background-size: cover;
+	background-size: cover;	
 }
 
 .pizzaInfo {
