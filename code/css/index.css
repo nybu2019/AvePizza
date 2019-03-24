@@ -4,7 +4,9 @@
 }
 
 body{
+	margin-left: 7%;
 	font-family: 'Open Sans', sans-serif;
+	background-color: #ECECEC;
 }
 
 
@@ -65,27 +67,50 @@ body{
 
 }
 
-#filterNav{
+#filter{
 	display: flex;
-
+	margin: 30px auto 30px 5px;
 }
 
 .pizzaFilter{
 	border: 1px solid #000;
 	padding: 15px 10px;
+	cursor: pointer;
+ }
 
-
-}
-
-.pizzaFilter a{
-	color: #767676;
-	text-decoration: none;
+.pizzaFilter:hover{
+	background-color: #fff;
+	color: #000000;
 }
 
 #filterText{
 	padding: 15px 10px;
 }
 
+.sideNav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 7%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sideNav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  margin-top: 46px
+}
+
+.sideNav a:hover {
+	background-color: #EB0029;
+}
 
 
 
