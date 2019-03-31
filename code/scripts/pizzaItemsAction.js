@@ -50,6 +50,7 @@ window.onresize = function() {
     }
 
     countElement = Math.trunc((window.innerWidth - 400) / 400);
+    countElement = countElement === 0 ? 1 : countElement;
 
     createItems(countElement);
 };
