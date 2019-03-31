@@ -36,7 +36,23 @@ let pizzas = [
     }
 ];
 
-createItems();
+let countElement = Math.trunc((window.innerWidth - 600) / 400);
+
+createItems(countElement);
+
+window.onresize = function() {
+    let table = document.getElementById("tableRoot");
+  
+
+    for(let i = table.rows.length - 1; i >= 0; i--)
+    {
+        table.deleteRow(i);
+    }
+
+    countElement = Math.trunc((window.innerWidth - 400) / 400);
+
+    createItems(countElement);
+};
 
 
 // decCounElement.onclick = function() {
@@ -59,14 +75,14 @@ createItems();
 //     console.log("send to server");
 // };
 
-function createItems() {
+function createItems(rowSize) {
     let x = 0;
     let y = 0;
 
     pizzas.forEach(function(element) {
         createPizzaItem(element, x, y);
         y++;
-        if (y === 3) {
+        if (y === rowSize) {
             y = 0;
             x++;
         }        
