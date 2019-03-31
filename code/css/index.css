@@ -11,24 +11,57 @@ body{
 
 
 #headerNav{
-	background-color: #252C32;
-	height: 66px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	background-color: #fff;
+	height: 75px;
+}
+
+#headerNav ul{
+	list-style-type: none;
 
 }
 
-
-#headerNav a {
-	text-decoration: none;
-	font-size: 20px;
-	color: #D6BF4B;
+#headerNav li a {
+  display: block;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
 }
 
+#headerNav li {
+	float: right;
+	height: 75px;
 
-#headerNav a:hover { color: #C1D3D7;
 }
+
+.title {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    float: left !important;
+}
+
+.title a{
+	color: #000;
+}
+
+.shopSum, .shopBasket {
+	background-color: #EB0029;
+	border-right: 1px #000 solid
+	
+}
+
+.shopSum span, .fas {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 740;
+}
+
+.phoneNumber select {
+	border: none;
+	font-size: 18px;
+	outline: none;
+}
+
 
 
 #headerBg{
@@ -50,7 +83,7 @@ body{
 }
 
 #headerBg button {
-	background-color: #BE1D2D;
+	background-color: #EB0029;
 	color: #F9FFFF;
 	outline: none;
 	padding: 10px 18px;
@@ -62,7 +95,7 @@ body{
 
 .textLogo {
 	font-size: 45px;
-	color: #D6BF4B;
+	color: #fff;
 	font-style: italic;
 
 }
@@ -79,6 +112,7 @@ body{
 	padding: 15px 10px;
 	cursor: pointer;
 	color: #767676;
+	font-size: 18px;
 
  }
 
@@ -89,6 +123,7 @@ body{
 
 #filterText{
 	padding: 15px 10px;
+	font-size: 22px;
 }
 
 /*Sidebar*/
@@ -118,11 +153,11 @@ aside {
 	background-color: #EB0029;
 }
 
-li a span{
+aside li a span{
 	opacity: 0;
 }
 
-li a:hover span {
+aside li a:hover span {
 	opacity: 1;
 }
 
