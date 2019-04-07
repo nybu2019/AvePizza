@@ -44,6 +44,10 @@ body{
 	color: #000;
 }
 
+.shopSum {
+	width: 110px;
+}
+
 .shopSum, .shopBasket {
 	background-color: #EB0029;
 	border-right: 1px #000 solid
