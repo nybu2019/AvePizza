@@ -9,6 +9,7 @@ body{
 	background-color: #ECECEC;
 }
 
+/*header*/
 
 .headerNav{
 	background-color: #fff;
@@ -20,7 +21,7 @@ body{
 
 }
 
-.headerNav li a {
+.headerNav li a, div.shopSum, .title h2, .phoneNumber div {
   display: block;
   text-align: center;
   padding: 20px 30px;
@@ -34,27 +35,30 @@ body{
 }
 
 .title {
-    font-size: 24px;
-    font-weight: 900;
-    text-transform: uppercase;
     float: left !important;
 }
 
-.title a{
+.title h2{
 	color: #000;
+	font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+	
 }
 
-.shopSum, .shopBasket {
+.boxSum, .shopBasket {
 	background-color: #EB0029;
 	border-right: 1px #000 solid
 	
 }
 
-.shopSum span {
+.boxSum span {
 	color: #fff;
 	font-size: 26px;
 	font-weight: 740;
 }
+
+
 
 .fa-shopping-basket{
 	font-size: 30px;
@@ -64,13 +68,15 @@ body{
 
 .phoneNumber select {
 	border: none;
-	font-size: 18px;
+	font-size: 19px;
 	outline: none;
+	cursor: pointer;
 }
+
 
 .fa-phone{
 	color: #000;
-	font-size: 18px
+	font-size: 18px;
 }
 
 
@@ -101,7 +107,8 @@ body{
 	position: absolute;
 	top: 340px;
 	right: 70px;
-	box-shadow: 5px 5px 10px #000; 
+	box-shadow: 5px 5px 10px #000;
+	cursor: pointer; 
 }
 
 .textLogo {
@@ -155,13 +162,14 @@ aside {
   
 }
 
+
 .logo img {
 	height: 130px;
 	width: 100%;
 }
 
 .sideNav a {
-  padding: 8px 18px ;
+  padding: 10px 18px ;
   text-decoration: none;
   font-size: 20px;
   color: #fff;
@@ -187,9 +195,15 @@ aside li a:hover span {
 	height: 50px;
 }
 
+.sideNav li:hover .icon {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 .sideNav li span{
 	display: block;
-	margin: 5px 0 auto;
+	margin: 10px 0 auto;
 	text-align: center;
 	font-size: 18px;
 }
@@ -207,6 +221,103 @@ aside li a:hover span {
 	font-size: 20px;
 	padding: 7px;
 }
+
+
+/*Our Team style*/
+.ourTeam .teamTitle {
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 35px;
+	background-color: #EB0029;
+	color: #fff;
+	padding: 10px;
+	text-shadow: 2px 2px 0px  #000;
+
+}
+
+.mainCircule {
+	box-sizing: border-box;
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	margin-bottom: 30px;
+	position: absolute;
+	background-color: #000;	
+
+}
+
+.teamItem1 {
+	left: 20%;
+	border: 2px solid #4DB995;
+}
+
+.teamItem2 {
+	left: 47%;
+	border: 2px solid #126EBC;
+}
+
+.teamItem3 {
+	right: 10%;
+	border: 2px solid #AFBC78;
+}
+
+.tperson1 {
+	width: 220px;
+	height: 220px;
+	position: absolute;
+	border-radius: 100%;
+	top: 5%;
+
+}
+.facebook, .twitter, .in, .google {
+	width: 40px;
+	height: 40px;
+	border: 2px solid #4DB995;
+	border-radius: 100%;
+	position: absolute;
+	background-color: #000;
+	text-align: center;
+
+}
+
+
+/*position app*/
+
+.facebook {
+	right: 10%;
+}
+
+.twitter {
+	right: -7%;
+	top: 25%;
+}
+
+.in {
+	right: -8%;
+	top: 56%;
+}
+
+.google {
+	right: 10%;
+	top: 80%;
+}
+
+
+
+.teamItem1 .fab {
+	z-index: 1;
+	color: #4DB995;
+}
+
+.teamItem2 .fab {
+	z-index: 1;
+	color: #126EBC;
+}
+
+.teamItem3 .fab {
+	z-index: 1;
+	color: #AFBC78
+	}
 
 
 

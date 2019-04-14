@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/formStyles.css">
+	<title>Form</title>
+</head>
+
+<body>
+
+	<form action="malito:ch.korinetska@gmail.com" autocomplete="on" method="POST" enctype="text/plain">
+		
+		<p class="title">enter delivery data</p>
+		
+		<!-- Delivery type -->
+
+		<div>
+			<input type="radio" name="orderWay" value="1" id="orderWay1" checked>
+			<label for="orderWay1">Courier delivery</label>
+		</div>
+
+		<div>
+			<input type="radio" name="orderWay" value="2" id="orderWay2">
+			<label for="orderWay2">Take it yourself</label>
+		</div>
+
+		<div>
+			<input type="radio" name="orderWay" value="3" id="orderWay3">
+			<label for="orderWay3">Give info by phone call</label>
+		</div>
+
+
+		<!-- Customer info -->
+		<div>
+			<input type="text" name="name" autocomplete="on" placeholder="Name" required spellcheck="true">
+		</div>
+
+		<div>
+			<span>+38</span>
+			<input type="tel" autocomplete="on" required name="phone" placeholder="(099)123-4567">
+		</div>
+
+		<div>
+			<input type="email" autocomplete="on" required name="email" placeholder="Your email (not important)">
+		</div>
+
+		<div>
+			<input type="checkbox" id="subscribe">
+			<label for="subscribe">Receive news and special offers</label>
+		</div>
+
+		<hr>
+		
+		<!--  -->
+
+		<div>
+			<input type="text" name="city" readonly value="Lviv">
+		</div>
+
+		<div>
+			<input type="text" name="street" autocomplete="on" placeholder="Street" required>
+		</div>
+
+		<div>
+			<input type="text" name="house" autocomplete="on" placeholder="House">
+		</div>
+
+		<div>
+			<input type="text" name="flat" autocomplete="on" placeholder="Flat">
+		</div>
+
+		<!--  -->
+
+		<div>
+			<div>
+				<input type="date" name="date" placeholder="Delivery date">
+			</div>
+
+			<div>
+				<input type="time" name="time" placeholder="Choose the time">
+			</div>
+
+			<div>
+				<select name="payMethod">
+					<option selected disabled>Payment method</option>
+					<option value="cash">Cash</option>
+					<option value="card">Card</option>
+					<option value="terminal">Terminal</option>
+				</select>
+			</div>
+
+			<div>
+				<input type="text" name="surrender" placeholder="Sum, USD">
+			</div>
+		</div>
+
+		<div><input type="submit" name="submit" value="Send"></div>
+	</form>
+	
+</body>
+</html>
