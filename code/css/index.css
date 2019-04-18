@@ -47,6 +47,10 @@ body{
 }
 
 .boxSum, .shopBasket {
+	width: 110px;
+}
+
+.shopSum, .shopBasket {
 	background-color: #EB0029;
 	border-right: 1px #000 solid
 	
@@ -515,4 +519,16 @@ aside li a:hover span {
 	top: 13px;
 	right: 15px;
 	font-size: 20px;
+}
+
+.shopBasket div {
+	position: absolute;
+	color: white;
+	font-size: 15px;
+	margin-left: 30px;
+	margin-top: -15px;
+	background-color: black;
+	border-radius: 50%;
+	width: 15px;
+	height: 20px;
 }
