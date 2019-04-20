@@ -1,204 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Ave Pizza</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ave Pizza</title>
 
-	<!--Підключаємо css бібліотеку normalize (нормалізація стилів)-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="shortcut icon" href="../../resources/imagesIndex/pizza-Icon.png" type="image/png">
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
-</head>
+		<!--Підключаємо css бібліотеку normalize (нормалізація стилів)-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="shortcut icon" href="../../resources/imagesIndex/pizza-Icon.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		<link rel="stylesheet" type="text/css" href="../banner/bannerStyles.css">
+	</head>
 
-<body>
+	<body>
 
-	<!--.....Header.............-->
+		<!--.....Header.............-->
 
-<header>
-	
-	<nav class="headerNav">
-		<ul>
+	<header>
+		
+		<nav class="headerNav">
+			<ul>
 
-	
-			  
-			<li class="boxSum">
-			  <div class="shopSum">
-			    <span class="basketPrice">0$</span>
-				</div>
-			</li>
+		
+					
+				<li class="boxSum">
+					<div class="shopSum">
+						<span class="basketPrice">0$</span>
+					</div>
+				</li>
+				
+				<li class="shopBasket" title="Open the basket">
+					<a href="#">
+						<div class="basketCount">0</div>
+						<i class="fas fa-shopping-basket"></i>
+					</a>
+				</li>
+				<li class="title">
+					<h2>Pizza</h2>
+				</li>
+				<li class="phoneNumber">
+					<div>
+						<i class="fas fa-phone"></i>
+						<select  title="Call to us">
+						<option>+38097444325</option>
+						<option>+38097444325</option>
+						<option>+38097444325</option>
+						</select>
+					</div>
+				</li>
+			</ul>
+				
 			
-			<li class="shopBasket" title="Open the basket">
-			  <a href="#">
-					<div class="basketCount">0</div>
-					<i class="fas fa-shopping-basket"></i>
-				</a>
-			</li>
-			<li class="title">
-			  <h2>Pizza</h2>
-			</li>
-			<li class="phoneNumber">
-				<div>
-				  <i class="fas fa-phone"></i>
-				  <select  title="Call to us">
-					<option>+38097444325</option>
-					<option>+38097444325</option>
-					<option>+38097444325</option>
-				  </select>
-				</div>
-			</li>
+		</nav>
+		
+
+		<div class="mainBanner">
+
+			<div class="bannerNavi leftBannerNavi">
+			</div>
+			<div class="bannerNavi rightBannerNavi">
+			</div>
+
+			<div class="imgBanner img1">
+			</div>
+
+			<div class="imgBanner img2">
+			</div>
+
+			<div class="imgBanner img3">
+			</div>  
+
+		</div>
+
+
+		<!-- <div id="headerBg">
+
+			<div id="headerText">
+				
+			<span class="textLogo">Ave pizza</span><br>
+			Order capricciosa by<br> clicking the below button<br> and get 40% discount
+
+			</div>
+			
+			<button>Order now</button>
+		</div> -->
+
+	</header>
+
+	<!-- Sidebar -->
+
+	<aside >
+		
+
+		<a class="logo" href="#" title="Back to main page">
+			<img src="../../resources/imagesIndex/logoImg.jpg" alt="Ave Pizza">
+		</a>
+
+		<ul class="sideNav">
+
+		<li>
+			<a href="#" title="Go to page with assortment of pizza">
+				<img src="../../resources/sideIcons/pizza-slice.png" class="icon pizzaSlice" alt="icon pizzaSlice">
+				<span>Pizza</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="#" title="Go to page with assortment of beverages">
+			<img src="../../resources/sideIcons/infusion.png" class="icon pizzaSlice" alt="icon pizzaSlice">
+			<span>Beverages</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="#" title="Go to page with assortment of salads">
+			<img src="../../resources/sideIcons/salad.png" class="icon salad" alt="icon salad">
+			<span>Salads</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="#" title="Go to the share page">
+			<img src="../../resources/sideIcons/gift-box.png" class="icon giftBox" alt="icon giftBox">
+			<span>Action</span>
+		</a>
+		</li>
+
+		<li>
+			<a href="#" title="Go to page with constructor">
+			<img src="../../resources/sideIcons/pizza.png" class="icon pizzaConstr" alt="icon pizza">
+			<span>Constructor</span>
+			</a>
+		</li>
+
 		</ul>
+
+		<div class="socials">
+
+		<a href="#"  target="_blank"title="We are in social networks">
+			<i class="fab fa-instagram"></i>
+		</a>
+		<a href="#" target="_blank" title="We are in social networks">
+			<i class="fab fa-facebook"></i>
+		</a>
+		<a href="#" target="_blank" title="Write to us">
+			<i class="far fa-envelope"></i>
+		</a>
+
+		</div>
+
+	</aside>
+
+	<!-- Pizza Filter -->
+
+	<div id="filter">
+
+		<span id="filterText">Filter</span>
+
+		<div class="pizzaFilter" title="Filter pizza by category">
+			<span>All</span>
+		</div>
+		<div class="pizzaFilter" title="Filter pizza by category">
+			<span>Meat Pizza</span>
+		</div>
+		<div class="pizzaFilter" title="Filter pizza by category">
+			<span>Chees Pizza</span>
+		</div>
+		<div class="pizzaFilter" title="Filter pizza by category">
+			<span>Vagetarian Pizza</span>
+		</div>
+		<div class="pizzaFilter" title="Filter pizza by category">
+			<span>With fish</span>
+		</div>
+
+	</div>
+
+
+	<!-- Our Team -->
+
+
+	<div class="ourTeam">
 			
+			<h2 class="teamTitle">Our Team</h2>
 		
-	</nav>
-	
+			<div class="mainCircule teamItem1">
+				<img src="../../resources/ourTeam/shef.jpg" class="tperson1">
+				<div class="smallCircule facebook"><i class="fab fa-facebook-f"></i></div>
+				<div class="smallCircule twitter"><i class="fab fa-instagram"></i></div>
+				<div class="smallCircule in"><i class="fab fa-twitter"></i></div>
+				<div class="smallCircule google"><i class="fab fa-google"></i></div>
+			</div>
 
 
-	<div id="headerBg">
-
-		<div id="headerText">
-			
-		<span class="textLogo">Ave pizza</span><br>
-		Order capricciosa by<br> clicking the below button<br> and get 40% discount
-
-		</div>
 		
-		<button>Order now</button>
-	</div>
-
-</header>
-
-<!-- Sidebar -->
-
-<aside >
-	
-
-  <a class="logo" href="#" title="Back to main page">
-  	<img src="../../resources/imagesIndex/logoImg.jpg" alt="Ave Pizza">
-  </a>
-
-  <ul class="sideNav">
-
-  <li>
-  	<a href="#" title="Go to page with assortment of pizza">
-  	  <img src="../../resources/sideIcons/pizza-slice.png" class="icon pizzaSlice" alt="icon pizzaSlice">
-  	  <span>Pizza</span>
-  	</a>
-  </li>
-
-  <li>
-  	<a href="#" title="Go to page with assortment of beverages">
-  	<img src="../../resources/sideIcons/infusion.png" class="icon pizzaSlice" alt="icon pizzaSlice">
-  	<span>Beverages</span>
-  	</a>
-  </li>
-
-  <li>
-  	<a href="#" title="Go to page with assortment of salads">
-  	<img src="../../resources/sideIcons/salad.png" class="icon salad" alt="icon salad">
-  	<span>Salads</span>
-  	</a>
-  </li>
-
-  <li>
-  	<a href="#" title="Go to the share page">
-  	<img src="../../resources/sideIcons/gift-box.png" class="icon giftBox" alt="icon giftBox">
-  	<span>Action</span>
-   </a>
-  </li>
-
-  <li>
-  	<a href="#" title="Go to page with constructor">
-  	<img src="../../resources/sideIcons/pizza.png" class="icon pizzaConstr" alt="icon pizza">
-  	<span>Constructor</span>
-    </a>
-  </li>
-
-  </ul>
-
-  <div class="socials">
-
-  <a href="#"  target="_blank"title="We are in social networks">
-  	<i class="fab fa-instagram"></i>
-  </a>
-  <a href="#" target="_blank" title="We are in social networks">
-  	<i class="fab fa-facebook"></i>
-  </a>
-  <a href="#" target="_blank" title="Write to us">
-  	<i class="far fa-envelope"></i>
-  </a>
-
-  </div>
-
-</aside>
-
-<!-- Pizza Filter -->
-
-<div id="filter">
-
-	<span id="filterText">Filter</span>
-
-	<div class="pizzaFilter" title="Filter pizza by category">
-	  <span>All</span>
-	</div>
-	<div class="pizzaFilter" title="Filter pizza by category">
-	  <span>Meat Pizza</span>
-	</div>
-	<div class="pizzaFilter" title="Filter pizza by category">
-	  <span>Chees Pizza</span>
-	</div>
-	<div class="pizzaFilter" title="Filter pizza by category">
-	  <span>Vagetarian Pizza</span>
-	</div>
-	<div class="pizzaFilter" title="Filter pizza by category">
-	  <span>With fish</span>
-	</div>
-
-</div>
-
-
-<!-- Our Team -->
-
-
-<div class="ourTeam">
+			<div class="mainCircule teamItem2">
+				<img src="../../resources/ourTeam/shef.jpg" class="tperson1">
+				<div class="smallCircule facebook"><i class="fab fa-facebook-f"></i></div>
+				<div class="smallCircule twitter"><i class="fab fa-instagram"></i></div>
+				<div class="smallCircule in"><i class="fab fa-twitter"></i></div>
+				<div class="smallCircule google"><i class="fab fa-google"></i></div>
+			</div>
 		
-		<h2 class="teamTitle">Our Team</h2>
-	
-		<div class="mainCircule teamItem1">
-			<img src="../../resources/ourTeam/shef.jpg" class="tperson1">
-			<div class="smallCircule facebook"><i class="fab fa-facebook-f"></i></div>
-			<div class="smallCircule twitter"><i class="fab fa-instagram"></i></div>
-			<div class="smallCircule in"><i class="fab fa-twitter"></i></div>
-			<div class="smallCircule google"><i class="fab fa-google"></i></div>
-		</div>
+
+		
+			<div class="mainCircule teamItem3">
+				<img src="../../resources/ourTeam/shef.jpg" class="tperson1">
+				<div class="smallCircule facebook"><i class="fab fa-facebook-f"></i></div>
+				<div class="smallCircule twitter"><i class="fab fa-instagram"></i></div>
+				<div class="smallCircule in"><i class="fab fa-twitter"></i></div>
+				<div class="smallCircule google"><i class="fab fa-google"></i></div>
+			</div>
+		
+
+	</div>
+
+	<button id="testButton" style="width: 100px; height: 50px; background: black; color: white;">TestButton</button>
 
 
-	
-		<div class="mainCircule teamItem2">
-			<img src="../../resources/ourTeam/shef.jpg" class="tperson1">
-			<div class="smallCircule facebook"><i class="fab fa-facebook-f"></i></div>
-			<div class="smallCircule twitter"><i class="fab fa-instagram"></i></div>
-			<div class="smallCircule in"><i class="fab fa-twitter"></i></div>
-			<div class="smallCircule google"><i class="fab fa-google"></i></div>
-		</div>
-	
+		
+	</body>
 
-	
-		<div class="mainCircule teamItem3">
-			<img src="../../resources/ourTeam/shef.jpg" class="tperson1">
-			<div class="smallCircule facebook"><i class="fab fa-facebook-f"></i></div>
-			<div class="smallCircule twitter"><i class="fab fa-instagram"></i></div>
-			<div class="smallCircule in"><i class="fab fa-twitter"></i></div>
-			<div class="smallCircule google"><i class="fab fa-google"></i></div>
-		</div>
-	
-
-</div>
-
-<button id="testButton" style="width: 100px; height: 50px; background: black; color: white;">TestButton</button>
-
-
-	
-</body>
 	<script src="../scripts/mainAction.js"></script>
+	<script src="../banner/bannerAction.js"></script>
 </html>

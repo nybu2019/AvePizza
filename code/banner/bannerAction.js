@@ -16,6 +16,9 @@ img1.style.backgroundImage = "url(" + images[0].path + ")";
 img2.style.backgroundImage = "url(" + images[2].path + ")"; 
 img3.style.backgroundImage = "url(" + images[1].path + ")"; 
 
+
+
+
 let indexImage = 3;
 
 
@@ -50,6 +53,7 @@ document.getElementsByClassName("rightBannerNavi")[0].onclick = function() {
     }
 };
 
+
 function incIndexImage() {
     indexImage++;
     if (indexImage === images.length) {
@@ -77,9 +81,9 @@ function loopImages() {
         img1.style.opacity = "0";
 
         setTimeout(function() {
-            img3.style.right = "800px";
+            img3.style.right = "100%";
             img2.style.right = "0px";
-            img1.style.right = "-800px";
+            img1.style.right = "-100%";
         }, 500);
 
         setTimeout(function() {
@@ -95,9 +99,9 @@ function loopImages() {
         img3.style.opacity = "0";
 
         setTimeout(function() {
-            img2.style.right = "800px";
+            img2.style.right = "100%";
             img1.style.right = "0px";
-            img3.style.right = "-800px";
+            img3.style.right = "-100%";
         }, 500);
 
         setTimeout(function() {
@@ -113,9 +117,9 @@ function loopImages() {
         img2.style.opacity = "0";
 
         setTimeout(function() {
-            img1.style.right = "800px";
+            img1.style.right = "100%";
             img3.style.right = "0px";
-            img2.style.right = "-800px";
+            img2.style.right = "-100%";
         }, 500);
 
         setTimeout(function() {
@@ -140,8 +144,8 @@ function loopImagesReverse() {
         img2.style.opacity = "0";
 
         setTimeout(function() {
-            img3.style.right = "-800px";
-            img2.style.right = "800px";
+            img3.style.right = "-100%";
+            img2.style.right = "100%";
             img1.style.right = "0px";
         }, 500);
 
@@ -157,8 +161,8 @@ function loopImagesReverse() {
 
         setTimeout(function() {
             img2.style.right = "0px";
-            img1.style.right = "-800px";
-            img3.style.right = "800px";
+            img1.style.right = "-100%";
+            img3.style.right = "100%";
         }, 500);
 
         setTimeout(function() {
@@ -172,9 +176,9 @@ function loopImagesReverse() {
         img1.style.opacity = "0";
 
         setTimeout(function() {
-            img1.style.right = "800px";
+            img1.style.right = "100%";
             img3.style.right = "0px";
-            img2.style.right = "-800px";
+            img2.style.right = "-100%";
         }, 500);
 
         setTimeout(function() {
