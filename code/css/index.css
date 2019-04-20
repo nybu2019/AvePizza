@@ -31,14 +31,13 @@ body{
 .headerNav li {
 	float: right;
 	height: 75px;
-
 }
 
 .title {
     float: left !important;
 }
 
-.title h2{
+.title h2 {
 	color: #000;
 	font-size: 24px;
     font-weight: 900;
@@ -50,10 +49,9 @@ body{
 	width: 110px;
 }
 
-.shopSum, .shopBasket {
+.boxSum, .shopBasket {
 	background-color: #EB0029;
-	border-right: 1px #000 solid
-	
+	border-right: 1px #000 solid;
 }
 
 .boxSum span {
@@ -61,8 +59,6 @@ body{
 	font-size: 26px;
 	font-weight: 740;
 }
-
-
 
 .fa-shopping-basket{
 	font-size: 30px;
@@ -84,13 +80,7 @@ body{
 }
 
 
-#headerBg{
-	background-color: #8D7166;
-	height: 370px;
-	width: 100%;
-	
-}
-
+/*
 #headerText{
 	position: absolute;
 	width: auto;
@@ -100,9 +90,9 @@ body{
 	text-align: right;
 	top: 135px;
 
-}
+}*/
 
-#headerBg button {
+/*#headerBg button {
 	background-color: #EB0029;
 	color: #F9FFFF;
 	font-weight: 550;
@@ -113,7 +103,7 @@ body{
 	right: 70px;
 	box-shadow: 5px 5px 10px #000;
 	cursor: pointer; 
-}
+}*/
 
 .textLogo {
 	font-size: 45px;
@@ -136,7 +126,8 @@ body{
 	padding: 15px 10px;
 	cursor: pointer;
 	color: #767676;
-	font-size: 18px;
+	font-size: 20px;
+	font-weight: 600;
 
  }
 
@@ -147,7 +138,7 @@ body{
 
 #filterText{
 	padding: 15px 10px;
-	font-size: 22px;
+	font-size: 24px;
 }
 
 
@@ -250,6 +241,23 @@ aside li a:hover span {
 
 }
 
+.smallCircule:hover {
+	background-color: #fff; 
+}
+
+.smallCircule .appLink {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+
+}
+
+.smallCircule .fa-instagram {
+	font-size: 22px;
+	font-weight: 600;
+}
+
 .teamItem1 {
 	left: 20%;
 	border: 2px solid #4DB995;
@@ -271,8 +279,8 @@ aside li a:hover span {
 	position: absolute;
 	border-radius: 100%;
 	top: 5%;
-
 }
+
 .facebook, .twitter, .in, .google {
 	width: 40px;
 	height: 40px;
@@ -283,6 +291,15 @@ aside li a:hover span {
 	text-align: center;
 
 }
+
+.teamItem3 .smallCircule {
+	border: 2px solid #F2AA00;
+}
+
+.teamItem2 .smallCircule {
+	border: 2px solid #126EBC;
+}
+
 
 
 /*position app*/
@@ -320,77 +337,9 @@ aside li a:hover span {
 
 .teamItem3 .fab {
 	z-index: 1;
-	color: #AFBC78
-	}
-
-
-
-
-
-/*banner style*/
-.mainBanner {
-	width: 800px;
-	height: 400px;
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
+	color: #F2AA00;
 }
 
-.mainBanner .imgBanner {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	transition: all ease-in-out 500ms;
-	-webkit-transition: all ease-in-out 500ms;
-	-moz-transition: all ease-in-out 500ms;
-	-o-transition: all ease-in-out 500ms;
-	z-index: 1;
-}
-
-.mainBanner #img1 {
-	right: 800px;
-	background-image: url(../../resources/bannerImages/img1.jpg);
-}
-
-.mainBanner #img2 {
-	right: -800px;
-	background-image: url(../../resources/bannerImages/img2.jpg);
-}
-
-.mainBanner #img3 {
-	right: 0px;
-	background-image: url(../../resources/bannerImages/img3.jpg);
-}
-
-
-
-/*button next prev style*/
-.bannerNavi {
-	width: 50px;
-	height: 50px;
-	top: 175px;
-	position: absolute;
-	opacity: 0.7;
-	z-index: 2;
-	cursor: pointer;
-
-	background-size: 80%;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.bannerNavi:hover {
-	opacity: 1;
-}
-
-.mainBanner #leftBannerNavi {
-	background-image: url(../../resources/bannerImages/bannerLeft.png);
-}
-
-.mainBanner #rightBannerNavi {
-	right: 0px;
-	background-image: url(../../resources/bannerImages/bannerRight.png);
-}
 
 
 /*pizza item styles*/
@@ -532,3 +481,103 @@ aside li a:hover span {
 	width: 15px;
 	height: 20px;
 }
+
+
+footer {
+	padding-top: 250px;
+	width: 100%;
+	height: 550px;
+}
+
+footer .wrap {
+	width: 100%;
+	height:100%;
+	background-color: #000;
+}
+
+.newsLetter {
+	height: 100px;
+	width: 100%;
+	background-color: #EB0029;
+	padding-top: 70px;
+	
+}
+
+footer .wrap .mailChimp {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.mailChimp li h2 {
+	color: #fff;
+	font-size: 35px;
+	padding-left: 20px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+}
+
+.mailChimp li h2 .fa-envelope {
+	padding-right: 10px;
+
+}
+
+
+.mailChimp li p {
+	padding-right: 40px;
+	color: #fff;
+	font-size: 18px;
+	padding-bottom: 20px;	
+}
+
+.mailChimp li form .newsEmail {
+    width: 300px;
+    height: 50px;
+    color: #999;
+    background: #fff;
+    border-radius: 25px;
+    border: none;
+    padding: 0 25px;
+    outline: none;
+}
+
+.mailChimp li form .submitButtom {
+	background-color: #EB0029;
+	height: 50px;
+    color: #fff;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    padding: 0 25px;
+    width: 120px;
+    font-size: 18px;
+    outline: none;
+}
+
+.footerInfo {
+	height: 300px;
+}
+.footerInfo .about {
+	width: 350px;
+	height: 100%;
+}
+
+.footerInfo .about .title {
+	font-size: 22px;
+	color: #E6E6E6;
+	padding: 20px 0;
+}
+
+.footerInfo .about .subtitle {
+	color: #E6E6E6;
+	word-wrap: break-word;
+}
+
+.about img {
+	width: 100%;
+}
+
+
+
+
+
