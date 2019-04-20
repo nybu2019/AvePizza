@@ -15,6 +15,8 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
 	transition: all ease-in-out 500ms;
 	-webkit-transition: all ease-in-out 500ms;
 	-moz-transition: all ease-in-out 500ms;
@@ -24,17 +26,14 @@
 
 .mainBanner .img1 {
 	right: 800px;
-	background-image: url(../../resources/bannerImages/img1.jpg);
 }
 
 .mainBanner .img2 {
 	right: -800px;
-	background-image: url(../../resources/bannerImages/img2.jpg);
 }
 
 .mainBanner .img3 {
 	right: 0px;
-	background-image: url(../../resources/bannerImages/img3.jpg);
 }
 
 
@@ -59,10 +58,10 @@
 }
 
 .mainBanner .leftBannerNavi {
-	background-image: url(../../resources/bannerImages/bannerLeft.png);
+	background-image: url(../../resources/bannerImages/bannerButtons/bannerLeft.png);
 }
 
 .mainBanner .rightBannerNavi {
 	right: 0px;
-	background-image: url(../../resources/bannerImages/bannerRight.png);
+	background-image: url(../../resources/bannerImages/bannerButtons/bannerRight.png);
 }
