@@ -5,12 +5,8 @@
 
 .mainBanner {
 	width: 100%;
-<<<<<<< HEAD:code/css/bannerStyles.css
 	height: 400px;
-=======
-	height: 600px;
 	margin: 0 auto;
->>>>>>> 9e0bca754a0437bfb080d0eb0dfb63a08127084c:code/banner/bannerStyles.css
 	position: relative;
 	overflow: hidden;
 	
