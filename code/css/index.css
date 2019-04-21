@@ -558,32 +558,106 @@ footer .wrap .mailChimp {
     width: 120px;
     font-size: 18px;
     outline: none;
+    cursor: pointer;
 }
 
 .footerInfo {
 	height: 300px;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
 }
+
 .footerInfo .about {
 	width: 350px;
 	height: 100%;
 }
 
-.footerInfo .about .title {
+.footerInfo .title {
 	font-size: 22px;
 	color: #E6E6E6;
 	padding: 20px 0;
+	width: 100%;
 }
 
 .footerInfo .about .subtitle {
 	color: #E6E6E6;
 	word-wrap: break-word;
+	text-align: center;
 }
 
-.about img {
-	width: 100%;
+.footerInfo .about .award {
+	width: 180px;
+	height: 150px;
+	display: block;
+  	margin: 0 auto;
+  	padding-bottom: 10px;
 }
 
+/*footer infomation*/
 
+/*.footerInfo .infomation {
+	padding-right: 20px;
+}*/
 
+.infomation ul a{
+	text-decoration: none;
+	color: #E6E6E6;
+}
 
+.infomation ul a:hover {
+	border-bottom: 2px solid  #E6E6E6;
+}
 
+.infomation ul li {
+  list-style: none;
+  padding-bottom: 19px;
+
+}
+
+.infomation ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #EB0029; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+/*footer instagram*/
+.instagram{
+	width: 415px;
+}
+.instagram .instagramPhoto {
+	width: 415px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.instagram .instagramPhoto .instagItem {
+	width: 125px;
+	height: 90px;
+	margin-bottom: 13px;
+	border: 2px solid #fff;
+	transition: all ease-in-out 400ms;
+	-webkit-transition: all ease-in-out 400ms;
+	-moz-transition: all ease-in-out 400ms;
+	-o-transition: all ease-in-out 400ms;
+}
+
+.instagramPhoto .instagItem:hover {
+	transform: scale(1.5);
+
+}
+
+#map {
+	width: 300px;
+	height: 200px;
+	
+
+}
+
+.comeToUs{
+	width: 305px;
+}
