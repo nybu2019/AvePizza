@@ -42,7 +42,7 @@ body{
 	font-size: 24px;
     font-weight: 900;
     text-transform: uppercase;
-	
+
 }
 
 .boxSum, .shopBasket {
@@ -110,7 +110,7 @@ body{
 	top: 260px;
 	right: 70px;
 	box-shadow: 5px 5px 10px #000;
-	cursor: pointer; 
+	cursor: pointer;
 }*/
 
 .textLogo {
@@ -154,15 +154,15 @@ body{
 /*Sidebar*/
 
 aside {
-  height: 100%; 
-  width: 160px; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  background-color: #111; 
-  overflow-x: hidden; 
-  
+  background-color: #111;
+  overflow-x: hidden;
+
 }
 
 
@@ -177,7 +177,7 @@ aside {
   font-size: 20px;
   color: #fff;
   display: block;
-  
+
 }
 
 .sideNav a:hover {
@@ -245,12 +245,12 @@ aside li a:hover span {
 	border-radius: 100%;
 	margin-bottom: 30px;
 	position: absolute;
-	background-color: #000;	
+	background-color: #000;
 
 }
 
 .smallCircule:hover {
-	background-color: #fff; 
+	background-color: #fff;
 }
 
 .smallCircule .appLink {
@@ -346,136 +346,6 @@ aside li a:hover span {
 	color: #F2AA00;
 }
 
-
-
-/*pizza item styles*/
-.pizzaContainer {
-	width: 300px;
-	height: 300px;
-	position: relative;
-	overflow: hidden;
-}
-
-.pizzaContainer:hover .pizzaInfo{
-	bottom: 15%;
-}
-.pizzaContainer:hover .pizzaNavi{
-	bottom: 0px;
-}
-
-.pizzaContainer div {
-	position: absolute;
-	transition: all ease-in-out 300ms;
-	-webkit-transition: all ease-in-out 300ms;
-	-moz-transition: all ease-in-out 300ms;
-	-o-transition: all ease-in-out 300ms;
-}
-
-.pizzaImg {
-	width: 100%;
-	height: 100%;
-	background-image: url(../../resources/pizzaItem/pizza1.jpg);
-	background-position: center;
-	background-size: cover;
-}
-
-.pizzaInfo {
-	bottom: 0px;
-	width: 100%;
-	height: 35%;
-	opacity: 0.8;
-	background-color: black;
-}
-
-.pizzaContainer div p {
-	color: white;
-	position: absolute;
-}
-
-.pizzaConfig {
-	margin: 15px;
-	font-size: 10px;
-}
-
-.pizzaPrice {
-	right: 0;
-	top: 0;
-	margin: 15px;
-	font-size: 15px;
-}
-
-.pizzaTitle {
-	font-size: 25px;
-	margin-top: 30px;
-	margin-left: 13px;
-}
-
-.pizzaDesc {
-	font-size: 15px;
-	margin-top: 60px;
-	margin-left: 13px;
-}
-
-.pizzaNavi {
-	bottom: -15%;
-	width: 100%;
-	height: 15%;
-	background-color: rgb(238, 98, 88);
-}
-
-.pizzaNavi p {
-	font-size: 30px;
-	position: absolute;
-}
-
-.pizzaNavi p, label{
-	-moz-user-select: -moz-none;
-	-khtml-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
- }
-
-.decCount {
-	left: 10px;
-}
-
-.incCount {
-	left: 80px;
-	top: 3px;
-}
-
-.pizzaNavi div {
-	position: absolute;
-	left: 33px;
-	top: 7px;
-	width: 30px;
-	height: 30px;
-	background-color: black;
-}
-
-.count {
-	position: absolute;
-	font-size: 25px;
-	color: white;
-	left: 7px;
-}
-
-.naviButton {
-	cursor: pointer;
-}
-
-.naviButton:hover {
-	color: black;
-}
-
-.pizzaContainer div .price {
-	right: 0px;
-	top: 13px;
-	right: 15px;
-	font-size: 20px;
-}
-
 .shopBasket div {
 	position: absolute;
 	color: white;
@@ -487,7 +357,6 @@ aside li a:hover span {
 	width: 15px;
 	height: 20px;
 }
-
 
 footer {
 	padding-top: 250px;
@@ -506,7 +375,7 @@ footer .wrap {
 	width: 100%;
 	background-color: #EB0029;
 	padding-top: 70px;
-	
+
 }
 
 footer .wrap .mailChimp {
@@ -534,7 +403,7 @@ footer .wrap .mailChimp {
 	padding-right: 40px;
 	color: #fff;
 	font-size: 18px;
-	padding-bottom: 20px;	
+	padding-bottom: 20px;
 }
 
 .mailChimp li form .newsEmail {
@@ -619,7 +488,7 @@ footer .wrap .mailChimp {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #EB0029; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
@@ -654,7 +523,7 @@ footer .wrap .mailChimp {
 #map {
 	width: 300px;
 	height: 200px;
-	
+
 
 }
 
