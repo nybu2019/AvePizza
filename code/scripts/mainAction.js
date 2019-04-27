@@ -3,17 +3,18 @@ document.getElementById("testButton").onclick = function() {
     increaseGoodsCount(1);
 };
 
-window.onwheel = function(event) {
+let lastScrollTop = 0;
+window.onscroll = function() { 
+    let st = window.pageYOffset || document.documentElement.scrollTop;     
     const headerNav = document.getElementsByClassName("headerNav")[0];
-
-    if (event.deltaY > 0) {
-        headerNav.style.top = "0px";
-    } else {
-
+    
+    if (st > lastScrollTop) {
         headerNav.style.top = "-100px";
+    } else {
+        headerNav.style.top = "0px";
     }
 
-    console.log(event);
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling    
 };
 
 function addGoodsPrice(price) {

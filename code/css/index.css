@@ -12,6 +12,7 @@ body{
 /*header*/
 
 .headerNav{
+	top: 0px;
 	width: calc(100% - 160px);
 	position: fixed;
 	background-color: #fff;
