@@ -9,6 +9,10 @@ body{
 	background-color: #ECECEC;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
 /*header*/
 
 .headerNav{
@@ -369,7 +373,7 @@ aside li a:hover span {
 footer {
 	padding-top: 250px;
 	width: 100%;
-	height: 550px;
+	height: 600px;
 }
 
 footer .wrap {
@@ -443,6 +447,7 @@ footer .wrap .mailChimp {
 	display: flex;
 	justify-content: space-around;
 	padding-top: 20px;
+
 }
 
 .footerInfo .about {
@@ -473,13 +478,9 @@ footer .wrap .mailChimp {
 
 /*footer infomation*/
 
-/*.footerInfo .infomation {
-	padding-right: 20px;
-}*/
-
 .infomation ul a{
-	text-decoration: none;
 	color: #E6E6E6;
+	padding-bottom: 2px;
 }
 
 .infomation ul a:hover {
@@ -501,8 +502,9 @@ footer .wrap .mailChimp {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
+
 /*footer instagram*/
-.instagram{
+.footerInfo .instagram{
 	width: 415px;
 }
 .instagram .instagramPhoto {
@@ -531,10 +533,52 @@ footer .wrap .mailChimp {
 #map {
 	width: 300px;
 	height: 200px;
-
-
 }
 
 .comeToUs{
 	width: 305px;
 }
+
+footer .payMethod {
+	height: 60px;
+	display: flex;
+	padding: 10px 0;
+	align-items: center;
+}
+
+footer .payMethod .subtitle{
+	color: #fff;
+	font-size: 22px;
+	padding: 0 5px 0 20px;
+}
+
+footer .payMethod img{
+	width:50px;
+	padding: 0 15px;
+}
+
+footer .copyRight {
+	height: 30px;
+	background-color: #111111;
+	color: #fff;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .copyRight a {
+	text-decoration: none;
+	color: #EB0029;
+}
+
+footer .copyRight p {
+	display: inline-block;
+}
+
+footer .copyRight .copyItems  {
+	padding: 0 20px;
+}
+
+
+
