@@ -36,52 +36,37 @@ let pizzas = [
     }
 ];
 
-let countElement = Math.trunc((window.innerWidth) / 400);
+const minSize = 200;
+const maxSize = 400;
 
-createItems(countElement);
+window.onload = function() {
+    createAll();
+};
 
 window.onresize = function() {
     let table = document.getElementById("tableRoot");
-
 
     for(let i = table.rows.length - 1; i >= 0; i--)
     {
         table.deleteRow(i);
     }
 
-    countElement = Math.trunc((window.innerWidth - 400) / 400);
-    countElement = countElement === 0 ? 1 : countElement;
-
-    createItems(countElement);
+    createAll();
 };
 
+function createAll() {
+    let countElement = Math.trunc((window.innerWidth - 100) / 400);
+    countElement = countElement === 0 ? 1 : countElement;
 
-// decCounElement.onclick = function() {
-//     let count = parseInt(countElement.innerHTML);
+    createItems(countElement, 400);
+}
 
-//     countElement.innerHTML = count - 1 < 1 ? 1 : count - 1;
-//     recountElementPrice();
-//     recountLeftMarginCountPizza();
-// };
-
-// incCountElement.onclick = function() {
-//     let count = parseInt(countElement.innerHTML);
-
-//     countElement.innerHTML = count + 1 === 100 ? 99 : count + 1;
-//     recountElementPrice();
-//     recountLeftMarginCountPizza();
-// };
-
-// toBasketElement.onclick = function() {
-//     console.log("send to server");
-// };
-
-function createItems(rowSize) {
+function createItems(rowSize, size) {
     let x = 0;
     let y = 0;
 
     pizzas.forEach(function(element) {
-        createPizzaItem(element, x, y);
+        createPizzaItem(element, x, y, size);
         y++;
         if (y === rowSize) {
             y = 0;
@@ -104,7 +89,7 @@ function recountLeftMarginCountPizza() {
     }
 }
 
-function createPizzaItem(pizzaData, x, y) {
+function createPizzaItem(pizzaData, x, y, size) {
     let table = document.getElementById("tableRoot");
     let row = table.rows[x] === undefined ? table.insertRow(x) : table.rows[x];
 
@@ -159,6 +144,9 @@ function createPizzaItem(pizzaData, x, y) {
     pizzaContainer.appendChild(pizzaImg);
     pizzaContainer.appendChild(pizzaInfo);
     pizzaContainer.appendChild(pizzaNavi);
+
+    pizzaContainer.style.width = size + "px";
+    pizzaContainer.style.height = size + "px";
 
 
     cell.appendChild(pizzaContainer);

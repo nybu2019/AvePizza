@@ -13,12 +13,10 @@ body {
 
 #tableRoot td {
 	padding: 10px;
-	
+
 }
 
 .pizzaContainer {
-	width: 400px;
-	height: 400px;
 	position: relative;
 	overflow: hidden;
 }
@@ -51,7 +49,7 @@ body {
 	height: 100%;
 	/* background-image: url(../../resources/pizzaItems/pizza1.jpg); */
 	background-position: center;
-	background-size: cover;	
+	background-size: cover;
 }
 
 .pizzaInfo {
