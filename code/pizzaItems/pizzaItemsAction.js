@@ -36,8 +36,14 @@ let pizzas = [
     }
 ];
 
-const minSize = 200;
-const maxSize = 400;
+const sideBarWidth = 170;
+
+const minRow = 1;
+const maxRow = 3;
+const maxSize = (screen.width - sideBarWidth) / maxRow;
+const minSize = maxSize * 0.7;
+
+console.log(screen.width + "\n" + maxSize);
 
 window.onload = function() {
     createAll();
@@ -55,10 +61,37 @@ window.onresize = function() {
 };
 
 function createAll() {
-    let countElement = Math.trunc((window.innerWidth - 100) / 400);
+    const windowSize = window.innerWidth - 100 - sideBarWidth;
+    let tempSize = 0;
+    let countElement = 0;
+    for (let i = maxRow; i >= 1; --i) {
+        let found = false;
+        tempSize = maxSize;
+
+        while (true) {
+            if (tempSize < minSize) {
+                break;
+            }
+
+            if (i * tempSize <= windowSize) {
+                found = true;
+                countElement = i;
+                break;
+            }
+
+            tempSize--;
+        }
+
+        if (found) {
+            break;
+        }
+    }
+
+    // let countElement = Math.trunc((window.innerWidth) / tempSize);
     countElement = countElement === 0 ? 1 : countElement;
 
-    createItems(countElement, 400);
+    // console.log();
+    createItems(countElement, tempSize);
 }
 
 function createItems(rowSize, size) {
