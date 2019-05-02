@@ -36,13 +36,13 @@ let pizzas = [
     }
 ];
 
-let countElement = Math.trunc((window.innerWidth - 600) / 400);
+let countElement = Math.trunc((window.innerWidth) / 400);
 
 createItems(countElement);
 
 window.onresize = function() {
     let table = document.getElementById("tableRoot");
-  
+
 
     for(let i = table.rows.length - 1; i >= 0; i--)
     {
@@ -86,13 +86,13 @@ function createItems(rowSize) {
         if (y === rowSize) {
             y = 0;
             x++;
-        }        
+        }
     });
 }
 
 
 function recountElementPrice() {
-    priceElement.innerHTML = parseInt(countElement.innerHTML) * pizzaPrice + " UAH";    
+    priceElement.innerHTML = parseInt(countElement.innerHTML) * pizzaPrice + " UAH";
 }
 
 function recountLeftMarginCountPizza() {
@@ -178,16 +178,16 @@ function createPizzaItem(pizzaData, x, y) {
     decCount.onclick = function() {
         let countPizza = parseInt(count.innerHTML) - 1 < 1 ? 1 : parseInt(count.innerHTML) - 1;
         count.innerHTML = countPizza;
-        price.innerHTML = countPizza * pizzaData.price + " UAH";  
-        
+        price.innerHTML = countPizza * pizzaData.price + " UAH";
+
         count.style.left = parseInt(count.textContent) > 9 ? "0px" : "7px";
     };
 
     incCount.onclick = function() {
         let countPizza = parseInt(count.innerHTML) + 1 > 99 ? 99 : parseInt(count.innerHTML) + 1;
         count.innerHTML = countPizza;
-        price.innerHTML = countPizza * pizzaData.price + " UAH";  
-        
+        price.innerHTML = countPizza * pizzaData.price + " UAH";
+
         count.style.left = parseInt(count.textContent) > 9 ? "0px" : "7px";
     };
 
