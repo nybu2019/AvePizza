@@ -2,6 +2,7 @@ const express = require("express");
 const fs = require("fs");
 const app = express();
 const mainPage = require("./routes/mainPage.js");
+const banner = require("./routes/banner.js");
 
 
 
@@ -10,6 +11,7 @@ const mainPage = require("./routes/mainPage.js");
 
 
 app.use("/", mainPage);
+app.use("/banner", banner);
 
 
 

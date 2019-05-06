@@ -9,7 +9,7 @@
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
-	
+
 }
 
 .mainBanner .spaceDivBanner {
@@ -64,7 +64,7 @@ button next prev style*/
 }
 
 .mainBanner .leftBannerNavi {
-	background-image: url(../../resources/bannerImages/bannerButtons/bannerLeft.png);
+	background-image: url(bannerLeft.png);
 }
 
 .mainBanner .rightBannerNavi {

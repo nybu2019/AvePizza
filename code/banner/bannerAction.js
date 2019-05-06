@@ -12,9 +12,9 @@ let img1 = document.getElementsByClassName("img1")[0];
 let img2 = document.getElementsByClassName("img2")[0];
 let img3 = document.getElementsByClassName("img3")[0];
 
-img1.style.backgroundImage = "url(" + images[0].path + ")"; 
-img2.style.backgroundImage = "url(" + images[2].path + ")"; 
-img3.style.backgroundImage = "url(" + images[1].path + ")"; 
+img1.style.backgroundImage = "url(" + images[0].path + ")";
+img2.style.backgroundImage = "url(" + images[2].path + ")";
+img3.style.backgroundImage = "url(" + images[1].path + ")";
 
 
 
@@ -88,7 +88,7 @@ function loopImages() {
 
         setTimeout(function() {
             img1.style.opacity = "1";
-            img1.style.backgroundImage = "url(" + images[indexImage].path + ")"; 
+            img1.style.backgroundImage = "url(" + images[indexImage].path + ")";
             incIndexImage();
         }, 1000);
 
@@ -106,7 +106,7 @@ function loopImages() {
 
         setTimeout(function() {
             img3.style.opacity = "1";
-            img3.style.backgroundImage = "url(" + images[indexImage].path + ")"; 
+            img3.style.backgroundImage = "url(" + images[indexImage].path + ")";
             incIndexImage();
         }, 1000);
 
@@ -124,7 +124,7 @@ function loopImages() {
 
         setTimeout(function() {
             img2.style.opacity = "1";
-            img2.style.backgroundImage = "url(" + images[indexImage].path + ")"; 
+            img2.style.backgroundImage = "url(" + images[indexImage].path + ")";
             incIndexImage();
         }, 1000);
 
@@ -151,7 +151,7 @@ function loopImagesReverse() {
 
         setTimeout(function() {
             img2.style.opacity = "1";
-            img2.style.backgroundImage = "url(" + images[indexImage].path + ")"; 
+            img2.style.backgroundImage = "url(" + images[indexImage].path + ")";
             decIndexImage();
         }, 1000);
     }
@@ -167,7 +167,7 @@ function loopImagesReverse() {
 
         setTimeout(function() {
             img3.style.opacity = "1";
-            img3.style.backgroundImage = "url(" + images[indexImage].path + ")"; 
+            img3.style.backgroundImage = "url(" + images[indexImage].path + ")";
             decIndexImage();
         }, 1000);
     }
@@ -183,10 +183,8 @@ function loopImagesReverse() {
 
         setTimeout(function() {
             img1.style.opacity = "1";
-            img1.style.backgroundImage = "url(" + images[indexImage].path + ")"; 
+            img1.style.backgroundImage = "url(" + images[indexImage].path + ")";
             decIndexImage();
         }, 1000);
     }
 }
-
-
