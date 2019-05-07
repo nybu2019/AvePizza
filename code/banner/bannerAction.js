@@ -1,8 +1,8 @@
 const images = [
-    { path: "../../resources/bannerImages/bannerImages/img1.jpg" },
-    { path: "../../resources/bannerImages/bannerImages/img2.jpg" },
-    { path: "../../resources/bannerImages/bannerImages/img3.jpg" },
-    { path: "../../resources/bannerImages/bannerImages/img4.jpg" }
+    { path: "banner/img1.jpg" },
+    { path: "banner/img2.jpg" },
+    { path: "banner/img3.jpg" },
+    { path: "banner/img4.jpg" }
 ];
 let indexBanner = 1;
 let bannerInterval = 4000;
@@ -15,7 +15,6 @@ let img3 = document.getElementsByClassName("img3")[0];
 img1.style.backgroundImage = "url(" + images[0].path + ")";
 img2.style.backgroundImage = "url(" + images[2].path + ")";
 img3.style.backgroundImage = "url(" + images[1].path + ")";
-
 
 
 

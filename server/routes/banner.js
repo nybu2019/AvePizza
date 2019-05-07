@@ -6,6 +6,9 @@ function readFile(fileName) {
     return fs.readFileSync(__dirname + "/../../code/banner/" + fileName, 'utf8');
 }
 
+router.use(express.static(__dirname + "/../../resources/bannerImages/bannerImages"));
+router.use(express.static(__dirname + "/../../resources/bannerImages/bannerButtons"));
+
 //banner
 router.get("/bannerAction.js", function(req, res) {
     res.writeHead(200, {"Content-Type": "text/javascript"});

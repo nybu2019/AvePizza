@@ -3,6 +3,7 @@ const fs = require("fs");
 const app = express();
 const mainPage = require("./routes/mainPage.js");
 const banner = require("./routes/banner.js");
+const pizzaItems = require("./routes/pizzaItems.js");
 
 
 
@@ -12,6 +13,7 @@ const banner = require("./routes/banner.js");
 
 app.use("/", mainPage);
 app.use("/banner", banner);
+app.use("/pizzaItems", pizzaItems);
 
 
 

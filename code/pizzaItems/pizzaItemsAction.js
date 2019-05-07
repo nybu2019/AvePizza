@@ -4,35 +4,35 @@ let pizzas = [
         price: "127",
         title: "Neapolitan pizza",
         description: "Try so much and drink whiskey with Korinetska in bathroom",
-        imagePath: "../../resources/pizzaItems/pizza1.jpg"
+        imagePath: "pizzaItems/pizza1.jpg"
     },
     {
         config: "550g, 35sm",
         price: "127",
         title: "Neapolitan pizza",
         description: "Try so much and drink whiskey with Korinetska in bathroom",
-        imagePath: "../../resources/pizzaItems/pizza2.jpg"
+        imagePath: "pizzaItems/pizza2.jpg"
     },
     {
         config: "550g, 35sm",
         price: "127",
         title: "Neapolitan pizza",
         description: "Try so much and drink whiskey with Korinetska in bathroom",
-        imagePath: "../../resources/pizzaItems/pizza3.jpg"
+        imagePath: "pizzaItems/pizza3.jpg"
     },
     {
         config: "550g, 35sm",
         price: "127",
         title: "Neapolitan pizza",
         description: "Try so much and drink whiskey with Korinetska in bathroom",
-        imagePath: "../../resources/pizzaItems/pizza4.jpg"
+        imagePath: "pizzaItems/pizza4.jpg"
     },
     {
         config: "550g, 35sm",
         price: "127",
         title: "Neapolitan pizza",
         description: "Try so much and drink whiskey with Korinetska in bathroom",
-        imagePath: "../../resources/pizzaItems/pizza5.jpg"
+        imagePath: "pizzaItems/pizza5.jpg"
     }
 ];
 
