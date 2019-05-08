@@ -20,9 +20,13 @@ router.get("/pizzaItemsStyles.css", function(req, res) {
     res.end();
 });
 
-
-
-
+router.get("/pizzas/:type", function(req, res) {
+    res.writeHead(200, {"Content-Type": "application/json"});
+    if (req.params.type === "all") {
+        res.write(fs.readFileSync(__dirname + "/../../resources/jsons/pizzas.json", 'utf8'));
+    }
+    res.end();
+});
 
 
 module.exports = router;

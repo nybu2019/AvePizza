@@ -1,9 +1,3 @@
-const images = [
-    { path: "banner/img1.jpg" },
-    { path: "banner/img2.jpg" },
-    { path: "banner/img3.jpg" },
-    { path: "banner/img4.jpg" }
-];
 let indexBanner = 1;
 let bannerInterval = 4000;
 let mutex = 0;
@@ -12,18 +6,24 @@ let img1 = document.getElementsByClassName("img1")[0];
 let img2 = document.getElementsByClassName("img2")[0];
 let img3 = document.getElementsByClassName("img3")[0];
 
-img1.style.backgroundImage = "url(" + images[0].path + ")";
-img2.style.backgroundImage = "url(" + images[2].path + ")";
-img3.style.backgroundImage = "url(" + images[1].path + ")";
 
+let images = null;
+//request to the server
+fetch("/banner/bannerImages", {
+    method: "GET"
+})
+.then(response => response.json())
+.then(response => {
+    images = response;
+
+    img1.style.backgroundImage = "url(" + images[0].path + ")";
+    img2.style.backgroundImage = "url(" + images[2].path + ")";
+    img3.style.backgroundImage = "url(" + images[1].path + ")";
+});
 
 
 let indexImage = 3;
-
-
 let bannerHandler = setInterval(loopImages, bannerInterval);
-
-
 
 document.getElementsByClassName("mainBanner")[0].onmouseover = function() {
     clearInterval(bannerHandler);

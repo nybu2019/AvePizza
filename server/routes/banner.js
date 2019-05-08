@@ -21,6 +21,19 @@ router.get("/bannerStyles.css", function(req, res) {
     res.end();
 });
 
+router.get("/bannerImages", function(req, res) {
+    const images = [];
+    fs.readdirSync(__dirname + "/../../resources/bannerImages/bannerImages").forEach(file => {
+        images.push({path: "banner/" + file});
+    });
+    const imagesJson = JSON.stringify(images);
+
+    res.writeHead(200, {"Content-Type": "application/json"});
+    res.write(imagesJson);
+    res.end();
+});
+
+
 
 
 

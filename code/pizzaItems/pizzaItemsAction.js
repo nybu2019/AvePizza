@@ -1,40 +1,11 @@
-let pizzas = [
-    {
-        config: "550g, 35sm",
-        price: "127",
-        title: "Neapolitan pizza",
-        description: "Try so much and drink whiskey with Korinetska in bathroom",
-        imagePath: "pizzaItems/pizza1.jpg"
-    },
-    {
-        config: "550g, 35sm",
-        price: "127",
-        title: "Neapolitan pizza",
-        description: "Try so much and drink whiskey with Korinetska in bathroom",
-        imagePath: "pizzaItems/pizza2.jpg"
-    },
-    {
-        config: "550g, 35sm",
-        price: "127",
-        title: "Neapolitan pizza",
-        description: "Try so much and drink whiskey with Korinetska in bathroom",
-        imagePath: "pizzaItems/pizza3.jpg"
-    },
-    {
-        config: "550g, 35sm",
-        price: "127",
-        title: "Neapolitan pizza",
-        description: "Try so much and drink whiskey with Korinetska in bathroom",
-        imagePath: "pizzaItems/pizza4.jpg"
-    },
-    {
-        config: "550g, 35sm",
-        price: "127",
-        title: "Neapolitan pizza",
-        description: "Try so much and drink whiskey with Korinetska in bathroom",
-        imagePath: "pizzaItems/pizza5.jpg"
-    }
-];
+let pizzas = null;
+fetch("/pizzaItems/pizzas/all", {
+    method: "GET"
+})
+.then(response => response.json())
+.then(response => {
+    pizzas = response.pizzas;
+});
 
 const sideBarWidth = 170;
 
@@ -43,7 +14,6 @@ const maxRow = 3;
 const maxSize = (screen.width - sideBarWidth) / maxRow;
 const minSize = maxSize * 0.7;
 
-console.log(screen.width + "\n" + maxSize);
 
 window.onload = function() {
     createAll();
