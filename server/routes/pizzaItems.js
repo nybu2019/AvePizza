@@ -22,9 +22,18 @@ router.get("/pizzaItemsStyles.css", function(req, res) {
 
 router.get("/pizzas/:type", function(req, res) {
     res.writeHead(200, {"Content-Type": "application/json"});
+
+    const allPizzas = JSON.parse(fs.readFileSync(__dirname + "/../../resources/jsons/pizzas.json", 'utf8')).pizzas;
     if (req.params.type === "all") {
-        res.write(fs.readFileSync(__dirname + "/../../resources/jsons/pizzas.json", 'utf8'));
+        res.write(JSON.stringify(allPizzas));
+    } else
+    {
+        const typePizzas = allPizzas.filter(function(element) {
+            return element.type === req.params.type;
+        });
+        res.write(JSON.stringify(typePizzas));
     }
+
     res.end();
 });
 

@@ -1,11 +1,16 @@
 let pizzas = null;
-fetch("/pizzaItems/pizzas/all", {
-    method: "GET"
-})
-.then(response => response.json())
-.then(response => {
-    pizzas = response.pizzas;
-});
+getPizzasByType("all");
+
+function getPizzasByType(type) {
+    fetch("/pizzaItems/pizzas/" + type, {
+        method: "GET"
+    })
+    .then(response => response.json())
+    .then(response => {
+        pizzas = response;
+        reloadPizzaItems();
+    });
+}
 
 const sideBarWidth = 170;
 
@@ -16,10 +21,30 @@ const minSize = maxSize * 0.7;
 
 
 window.onload = function() {
+    document.getElementsByClassName("allPizzas")[0].onclick = function() {
+        getPizzasByType("all");
+    };
+    document.getElementsByClassName("meatPizzas")[0].onclick = function() {
+        getPizzasByType("meat");
+    };
+    document.getElementsByClassName("cheesePizzas")[0].onclick = function() {
+        getPizzasByType("cheese");
+    };
+    document.getElementsByClassName("vegetarianPizzas")[0].onclick = function() {
+        getPizzasByType("vegetarian");
+    };
+    document.getElementsByClassName("fishPizzas")[0].onclick = function() {
+        getPizzasByType("fish");
+    };
+
     createAll();
 };
 
 window.onresize = function() {
+    reloadPizzaItems();
+};
+
+function reloadPizzaItems() {
     let table = document.getElementById("tableRoot");
 
     for(let i = table.rows.length - 1; i >= 0; i--)
@@ -28,7 +53,7 @@ window.onresize = function() {
     }
 
     createAll();
-};
+}
 
 function createAll() {
     const windowSize = window.innerWidth - 100 - sideBarWidth;
