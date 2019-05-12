@@ -27,6 +27,9 @@ body {
 .pizzaContainer:hover .pizzaNavi{
 	bottom: 0px;
 }
+.pizzaContainer:hover .successAddStatus{
+	bottom: 0px;
+}
 
 .pizzaContainer:hover .pizzaImg{
 	transform: scale(1.1);
@@ -154,4 +157,18 @@ body {
 	font-size: 20px;
 	top: 32%;
 	left: 35%;
+}
+
+.successAddStatus {
+	bottom: -15%;
+	width: 100%;
+	height: 15%;	
+	background-color: black;
+}
+
+.successAddStatus .successMessage {
+	color: white;
+	position: relative;
+	text-align: center;
+		
 }

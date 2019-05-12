@@ -162,6 +162,12 @@ function createPizzaItem(pizzaData, x, y, size) {
             toBasket.classList.add("toBasket");
             let price = document.createElement("p");
             price.classList.add("price");
+
+            //child when pressed
+            let successMessage = document.createElement("p");
+            successMessage.classList.add("successMessage");
+            successMessage.innerHTML = "Added successful";
+            //
         pizzaNavi.appendChild(decCount);
         pizzaNavi.appendChild(labelDiv);
         pizzaNavi.appendChild(incCount);
@@ -212,5 +218,25 @@ function createPizzaItem(pizzaData, x, y, size) {
         //call function from another file
         addGoodsPrice(pizzaData.price * countPizzas);
         increaseGoodsCount(countPizzas);
+
+        pizzaNavi.classList.remove("pizzaNavi");
+        pizzaNavi.classList.add("successAddStatus");
+        while (pizzaNavi.firstChild) {
+            pizzaNavi.removeChild(pizzaNavi.firstChild);
+        }
+        pizzaNavi.appendChild(successMessage);
+        
+        setTimeout(function() {            
+            pizzaNavi.removeChild(pizzaNavi.firstChild);
+
+            pizzaNavi.classList.remove("successAddStatus");
+            pizzaNavi.classList.add("pizzaNavi");
+
+            pizzaNavi.appendChild(decCount);
+            pizzaNavi.appendChild(labelDiv);
+            pizzaNavi.appendChild(incCount);
+            pizzaNavi.appendChild(toBasket);
+            pizzaNavi.appendChild(price);
+        }, 1200);
     };
 }
