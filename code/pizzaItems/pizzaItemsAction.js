@@ -20,24 +20,23 @@ const maxSize = (screen.width - sideBarWidth) / maxRow;
 const minSize = maxSize * 0.7;
 
 
+
 window.onload = function() {
-    document.getElementsByClassName("allPizzas")[0].onclick = function() {
+    document.getElementsByClassName("pizzaFilter")[0].onclick = function() {
         getPizzasByType("all");
     };
-    document.getElementsByClassName("meatPizzas")[0].onclick = function() {
+    document.getElementsByClassName("pizzaFilter")[1].onclick = function() {
         getPizzasByType("meat");
     };
-    document.getElementsByClassName("cheesePizzas")[0].onclick = function() {
+    document.getElementsByClassName("pizzaFilter")[2].onclick = function() {
         getPizzasByType("cheese");
     };
-    document.getElementsByClassName("vegetarianPizzas")[0].onclick = function() {
+    document.getElementsByClassName("pizzaFilter")[3].onclick = function() {
         getPizzasByType("vegetarian");
     };
-    document.getElementsByClassName("fishPizzas")[0].onclick = function() {
+    document.getElementsByClassName("pizzaFilter")[4].onclick = function() {
         getPizzasByType("fish");
     };
-
-    createAll();
 };
 
 window.onresize = function() {
