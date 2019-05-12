@@ -111,19 +111,19 @@ body {
  }
 
 .decCount {
-	left: 10px;
-	top: 7px;
+	top: 20%;
+	left: 1%;
 }
 
 .incCount {
-	left: 80px;
-	top: 10px;
+	top: 22%;
+	left: 15%;
 }
 
 .pizzaNavi div {
 	position: absolute;
-	left: 35px;
-	top: 13px;
+	left: 6.5%;
+	top: 25%;
 	width: 30px;
 	height: 30px;
 	background-color: black;
@@ -145,14 +145,13 @@ body {
 }
 
 .pizzaContainer div .price {
-	right: 0px;
-	top: 17px;
-	right: 15px;
+	right: 3%;
+	top: 32%;
 	font-size: 20px;
 }
 
 .pizzaContainer .toBasket {
 	font-size: 20px;
-	top: 17px;
-	left: 145px;
+	top: 32%;
+	left: 35%;
 }

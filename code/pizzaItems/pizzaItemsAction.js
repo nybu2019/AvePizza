@@ -207,6 +207,10 @@ function createPizzaItem(pizzaData, x, y, size) {
     };
 
     toBasket.onclick = function() {
-        console.log("send to the server");
+        const countPizzas = parseInt(count.innerHTML);
+
+        //call function from another file
+        addGoodsPrice(pizzaData.price * countPizzas);
+        increaseGoodsCount(countPizzas);
     };
 }

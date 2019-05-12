@@ -1,8 +1,3 @@
-document.getElementById("testButton").onclick = function() {
-    addGoodsPrice(127);
-    increaseGoodsCount(1);
-};
-
 let lastScrollTop = 0;
 window.onscroll = function() { 
     let st = window.pageYOffset || document.documentElement.scrollTop;     
@@ -17,15 +12,19 @@ window.onscroll = function() {
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling    
 };
 
+
+let countGoods = 0;
+let goodsPrice = 0;
+
 function addGoodsPrice(price) {
     let basketPrice = document.getElementsByClassName("basketPrice")[0];
-    let currentPrice = parseInt(basketPrice.innerHTML.slice(0, basketPrice.innerHTML.length - 1));
-    basketPrice.innerHTML = (currentPrice + price) + "$";
+    goodsPrice += price;
+    basketPrice.innerHTML = goodsPrice + "$";
 }
 
 function increaseGoodsCount(count) {
     let basketCount = document.getElementsByClassName("basketCount")[0];
-    let currentCount = parseInt(basketCount.innerHTML);
-    basketCount.innerHTML = (currentCount + count);
-    basketCount.style.width = (15 + ((((currentCount + count) + "").length % 10 - 1)) * 7) + "px";
+    countGoods += count;
+    basketCount.innerHTML = countGoods;
+    basketCount.style.width = (15 + ((((countGoods) + "").length % 10 - 1)) * 7) + "px";
 }
