@@ -46,17 +46,26 @@ table {
 	border-spacing: 0;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 
 body {
 	background-color: #ECECEC;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+}
 
+input, select, textarea {
+	font-size: 17px;
+	padding: 15px;
 }
 
 .panel {
 	background-color: #fff;
 	width: 715px;
-	margin-left: 15px;
-	margin-top: 25px;
+	margin: 25px 0 90px 15px;
 	padding: 35px;
 }
 
@@ -65,56 +74,106 @@ body {
 	font-size: 25px;
 	font-weight: 800;
 	padding-bottom: 50px;
-
 }
 
-.panel .block1 {
+.formWrap {
+	height: 650px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	height: 250px;
+	align-items: center;
+}
+
+.block1 div {
+	display: inline-block;
 }
 
 .radioBtm {
-	font-size: 17px;
 	font-weight: 700;
 	padding-right: 10px;
-
 }
 
 .radioBtm input, .radioBtm label  {
 	cursor: pointer;
 }
 
-.radioBtm label:hover {
+.block1 div:hover {
 	color: #EB0029;
 }
 
 .customerInf {
-	width: 305px;
-	padding: 15px;
-	font-size: 17px;
+	width: 308px;
 }
 
 .phoneDiv {
 	border: 1px solid grey;
-	width: 305px;
+	width: 308px;
 	padding-left: 15px;
-	font-size: 17px;
-
 }
 
 .phoneInpt{
 	border: none;
-	font-size: 17px;
 	outline: none;
 	padding: 16px 16px 15px 0;
-
 }
 
 .addNews {
 	font-weight: 700;
-	width: 305px;
-	font-size: 17px;
-	padding: 15px 20px 15px 0;
+	width: 308px;
+}
+
+.addNews:hover {
+	color: #EB0029;
+}
+
+.residenceInfo {
+	width: 140px;
+}
+
+.deliveryInfo {
+	width: 200px;
+}
+
+.surrender {
+	width: 423px;
+}
+
+.surrenderInfo {
+	width: 200px;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.decorLine{
+	width: 100%;
+}
+
+.submitBtm {
+	width: 100%;
+	background-color: #F9B3BF;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 800;
+	border: none;
+	padding: 10px 0;
+}
+
+.addComment{
+	color: #EB0029;
+	font-family: monospace; 
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.contract {
+	width: 300px;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.CommentArea {
+	display: none;
+	width: 100%;
+	height: 100px;
 }

@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="./formStyles.css">
-
 	<title>Form</title>
 </head>
 
@@ -14,6 +13,8 @@
 		<p class="title">enter delivery data</p>
 
 		<!-- Delivery type -->
+		<div class="formWrap">
+
 		<div class="block1">
 			<div class="radioBtm">
 				<input type="radio" name="orderWay" value="1" id="orderWay1" checked>
@@ -30,7 +31,7 @@
 				<label for="orderWay3">Give info by phone call</label>
 			</div>
 
-
+		</div>
 		<!-- Customer info -->
 			<div class="nameInpt">
 				<input class="customerInf" type="text" name="name" autocomplete="on" placeholder="Name" required spellcheck="true">
@@ -39,7 +40,8 @@
 			<div>
 			<div class="phoneDiv">
 				<span>+38</span>
-				<input class="phoneInpt" type="tel" autocomplete="on" required name="phone" placeholder="(099)123-4567">
+				<input class="phoneInpt" type="tel" autocomplete="on" required name="phone" 
+				placeholder="(099)123-4567">
 			</div>
 		</div>
 
@@ -51,56 +53,68 @@
 				<input type="checkbox" id="subscribe">
 				<label for="subscribe">Receive news and special offers</label>
 			</div>
-
-		</div>
 		
-		<hr>
+		<div class="decorLine"><hr></div>
 
 		<!--  -->
 
-		<div>
-			<input type="text" name="city" readonly value="Lviv">
-		</div>
+			<input class="residenceInfo" type="text" name="city" readonly value="Lviv">
 
-		<div>
-			<input type="text" name="street" autocomplete="on" placeholder="Street" required>
-		</div>
+			<input class="residenceInfo" type="text" name="street" autocomplete="on" placeholder="Street" required>
 
-		<div>
-			<input type="text" name="house" autocomplete="on" placeholder="House">
-		</div>
+			<input class="residenceInfo" type="text" name="house" autocomplete="on" placeholder="House">
 
-		<div>
-			<input type="text" name="flat" autocomplete="on" placeholder="Flat">
-		</div>
+			<input class="residenceInfo" type="text" name="flat" autocomplete="on" placeholder="Flat">
+		
 
 		<!--  -->
 
-		<div>
-			<div>
-				<input type="date" name="date" placeholder="Delivery date">
-			</div>
-
-			<div>
-				<input type="time" name="time" placeholder="Choose the time">
-			</div>
-
-			<div>
-				<select name="payMethod">
+			
+				<input class="deliveryInfo" id="datePicker" type="date" name="date">
+			
+				<select class="deliveryInfo" name="DeliveryTime">
+					<option selected disabled>Delivery time</option>
+					<option value="t12-00">12:00</option>
+					<option value="t12-30">12:30</option>
+					<option value="t13:00">13:00</option>
+					<option value="t12-00">13:30</option>
+					<option value="t12-30">14:00</option>
+					<option value="t13:00">13:00</option>
+					<option value="t12-00">12:00</option>
+					<option value="t12-30">12:30</option>
+					<option value="t13:00">13:00</option>
+				</select>
+			
+				<select class="deliveryInfo" name="payMethod">
 					<option selected disabled>Payment method</option>
 					<option value="cash">Cash</option>
 					<option value="card">Card</option>
 					<option value="terminal">Terminal</option>
 				</select>
-			</div>
+		
 
-			<div>
-				<input type="text" name="surrender" placeholder="Sum, USD">
-			</div>
+			
+				<input class="surrender" type="text" name="surrender" placeholder="Sum, USD">
+
+				<div class="surrenderInfo">
+					<i>Вкажіть суму оплати, щоб кур'єр мав при собі решту</i>
+				</div>
+				<div class="addComment"  onclick="openbox('box'); return false">
+				+ Add comment (not important)
+				</div>
+				<div class="contract">
+					<i>*Підтверджуючи замовлення я свідомо погоджуюсь з умовами Публічного договору</i>
+				</div>
+
+				<textarea class="CommentArea" id="showArea" placeholder="Field for comments"></textarea>
+
 		</div>
+		
 
-		<div><input type="submit" name="submit" value="Send"></div>
+		<input class="submitBtm" type="submit" name="submit" value="Send">
+
 	</form>
 
 </body>
+<script src="form.js"></script>
 </html>
