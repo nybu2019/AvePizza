@@ -5,17 +5,9 @@ Date.prototype.toDateInputValue = (function() {
 });
 
 document.getElementById('datePicker').value = new Date().toDateInputValue();
+let displayArea = false;
 
-
-function openbox(showArea) {
-    display = document.getElementById('showArea').style.display;
-
-    if (display=='none') {
-       document.getElementById('showArea').style.display='block';
-
-    } else {
-       document.getElementById('showArea').style.display='none';
-    }
-
-}
-
+document.getElementsByClassName('addComment')[0].onclick = function() {
+    document.getElementById('showArea').style.display = displayArea ? "none" : "block";
+    displayArea = !displayArea;
+};
