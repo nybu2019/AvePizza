@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;		
+}
+
+html, body {
+	height: 100%;
+}
+
+.basketForm {
+	width: 30%;
+	height: 100%;
+	background-color: darkgray;
+}
+
+.basketForm .basketHead {
+	position: absolute;
+	width: 30%;
+	height: 80px;
+	background-color: darkseagreen;
+
+	align-items: center;
+	display: flex;
+}
+
+.basketForm .basketHead span {
+	font-weight: bold;
+	margin-left: 10px;
+	font-size: 50px;
+}
+
+.basketForm .basketHead .closeIcon {
+	position: relative;
+	right: -54%;
+	width: 50px;
+	height: 50px;
+	background-size: 100%;
+	background-image: url(../../resources/basketForm/close.png);
+}
+
+.basketForm .basketHead .closeIcon:hover {
+	background-color: red;
+}
+
+
+
+
+.basketForm .basketBottom {
+	position: absolute;
+	bottom: 0;
+	width: 30%;
+	height: 80px;
+	background-color: green;
+	font-size: 30px;
+}
+
+.basketForm .basketBottom .orderPrice {
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 100px;
+	background-color: black;
+}
+
+.basketForm .basketBottom .orderPrice span {
+	color: white;
+}
+
+.basketForm .basketBottom .orderAction {
+	position: relative;
+	float: left;
+	width: calc(100% - 100px);
+	height: 100%;
+	background-color: yellow;
+}
+
+.basketForm .basketBottom .orderAction {
+
+}
