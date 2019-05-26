@@ -8,14 +8,16 @@ html, body {
 }
 
 .basketForm {
+	float: left;
+	position: relative;
+
 	width: 30%;
 	height: 100%;
 	background-color: darkgray;
 }
 
 .basketForm .basketHead {
-	position: absolute;
-	width: 30%;
+	width: 100%;
 	height: 80px;
 	background-color: darkseagreen;
 
@@ -31,7 +33,7 @@ html, body {
 
 .basketForm .basketHead .closeIcon {
 	position: relative;
-	right: -54%;
+	right: -60%;
 	width: 50px;
 	height: 50px;
 	background-size: 100%;
@@ -39,27 +41,34 @@ html, body {
 }
 
 .basketForm .basketHead .closeIcon:hover {
-	background-color: red;
+	/* background-color: red; */
+	cursor: pointer;
 }
 
 
 
 
 .basketForm .basketBottom {
-	position: absolute;
 	bottom: 0;
-	width: 30%;
+	width: 100%;
 	height: 80px;
 	background-color: green;
 	font-size: 30px;
 }
 
 .basketForm .basketBottom .orderPrice {
-	position: relative;
 	float: left;
 	height: 100%;
 	width: 100px;
 	background-color: black;
+
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+	
+	justify-content: center;
+	align-items: center;
 }
 
 .basketForm .basketBottom .orderPrice span {
@@ -67,13 +76,53 @@ html, body {
 }
 
 .basketForm .basketBottom .orderAction {
-	position: relative;
-	float: left;
-	width: calc(100% - 100px);
 	height: 100%;
 	background-color: yellow;
+
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+	
+	justify-content: center;
+	align-items: center;
 }
 
 .basketForm .basketBottom .orderAction {
+	cursor: pointer;
+}
 
+
+
+
+
+.basketForm .basketBody {
+	overflow: auto;
+	height: calc(100% - 160px);
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.basketForm .basketBody ul{
+	list-style: none;
+}
+
+.basketForm .basketBody ul li {
+	font-size: 70px;
 }
