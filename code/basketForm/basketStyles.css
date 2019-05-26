@@ -96,9 +96,15 @@ html, body {
 
 
 
-.basketForm .basketBody {
+.basketForm .basketBody{
 	overflow: auto;
 	height: calc(100% - 160px);
+}
+
+.basketForm .basketBody ul li{
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
 }
 
 ::-webkit-scrollbar-track
