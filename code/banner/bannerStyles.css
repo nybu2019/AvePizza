@@ -71,3 +71,31 @@ button next prev style*/
 	right: 0px;
 	background-image: url(../../resources/bannerImages/bannerButtons/bannerRight.png);
 }
+
+.mySlides .sliderItem {
+  position: absolute;  
+  text-align: center; 
+  color: #fff;
+}
+
+.mySlides .sliderTitle {
+  font-size: 45px;
+  top: 80px;
+  width:100%;
+}
+
+.mySlides .sliderText {
+  top: 120px;
+  font-size: 22px;
+  width:100%;
+}
+
+.mySlides .sliderButt {
+  left:50%; 
+  margin-left: -90px;
+  padding: 20px 40px;
+  background-color: #FFC000;
+  bottom: 95px;
+  font-size: 18px;
+  font-weight: 600;
+}

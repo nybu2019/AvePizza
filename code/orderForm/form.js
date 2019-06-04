@@ -10,11 +10,11 @@ document.getElementById('datePicker').value = new Date().toDateInputValue();
 function openbox(showArea) {
     display = document.getElementById('showArea').style.display;
 
-    if (display=='none') {
-       document.getElementById('showArea').style.display='block';
+    if (display =='none') {
+       document.getElementById('showArea').style.display ='block';
 
     } else {
-       document.getElementById('showArea').style.display='none';
+       document.getElementById('showArea').style.display ='none';
     }
 
 }
