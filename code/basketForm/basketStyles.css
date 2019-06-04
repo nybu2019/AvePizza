@@ -1,0 +1,224 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	min-width: 200px;
+}
+
+.basketForm {
+	width: 30%;
+	height: 100%;
+	background-color: darkgray;
+}
+
+.basketForm .basketHead {
+	min-width: 100px;
+	width: 100%;
+	height: 80px;
+	background-color: darkseagreen;
+
+	align-items: center;
+	display: flex;
+}
+
+.basketForm .basketHead span {
+	font-weight: bold;
+	margin-left: 10px;
+	font-size: 50px;
+}
+
+.basketForm .basketHead .closeIcon {
+	margin-left:auto;
+	margin-right: 15px;
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+	background-size: 100%;
+	background-image: url(../../resources/basketForm/close.png);
+}
+
+.basketForm .basketHead .closeIcon:hover {
+	/* background-color: red; */
+	cursor: pointer;
+}
+
+
+
+
+.basketForm .basketBottom {
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	background-color: green;
+	font-size: 30px;
+}
+
+.basketForm .basketBottom .orderPrice {
+	float: left;
+	height: 100%;
+	width: 100px;
+	background-color: black;
+
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+	justify-content: center;
+	align-items: center;
+}
+
+.basketForm .basketBottom .orderPrice span {
+	color: white;
+}
+
+.basketForm .basketBottom .orderAction {
+	height: 100%;
+	background-color: yellow;
+
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+	justify-content: center;
+	align-items: center;
+}
+
+.basketForm .basketBottom .orderAction {
+	cursor: pointer;
+}
+
+
+
+
+
+.basketForm .basketBody{
+	overflow: auto;
+	width: 100%;
+	height: calc(100% - 160px);
+}
+
+.basketForm .basketBody ul li{
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.basketForm .basketBody ul{
+	list-style: none;
+}
+
+
+
+
+
+
+
+.pizzaItem {
+	width: 100%;
+	height: 150px;
+	background-color: aqua;
+}
+
+.pizzaItem .pizzaImage {
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin: 14px;
+	background-size: 100%;
+	background-image: url(../../resources/pizzaItems/pizza1.jpg);
+}
+
+.pizzaItem .editInfoItem {
+	float: left;
+	margin: 14px;
+	width: 40%;
+}
+
+.pizzaItem .editInfoItem span {
+	display: flex;
+	font-size: 20px;
+}
+
+.pizzaItem .editInfoItem {
+	position: relative;
+	height: 120px;
+}
+
+.pizzaItem .editInfoItem .deleteItem {
+	/* position: absolute;
+	bottom: 0px; */
+	font-weight: bold;
+}
+
+.pizzaItem .editInfoItem .deleteItem:hover {
+	color: red;
+	cursor: pointer;
+}
+
+
+
+
+
+
+.pizzaItem .divCount {
+	width: 18%;
+	display: flex;
+}
+
+.pizzaItem .divCount div {
+	width: 30px;
+	height: 30px;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	margin-top: 15px;
+	margin-left: 13px;
+}
+
+.pizzaItem .divCount div span {
+	margin-left: 8px;
+}
+
+.pizzaItem .divCount span {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.pizzaItem .divCount .decCount {
+	margin-top: 12px;
+	margin-right: -5px;
+}
+
+.pizzaItem .divCount .incCount {
+	margin-top: 14px;
+	margin-left: 5px;
+}
+
+.pizzaItem .divCount .decCount:hover, .incCount:hover {
+	color: red;
+	cursor: pointer;
+}

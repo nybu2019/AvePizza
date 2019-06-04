@@ -16,17 +16,17 @@
 		<div class="formWrap">
 
 		<div class="block1">
-			<div class="radioBtm">
+			<div class="radioBtn courier-delivery ">
 				<input type="radio" name="orderWay" value="1" id="orderWay1" checked>
 				<label for="orderWay1">Courier delivery</label>
 			</div>
 
-			<div  class="radioBtm">
+			<div  class="radioBtn take-yourself">
 				<input type="radio" name="orderWay" value="2" id="orderWay2">
 				<label for="orderWay2">Take it yourself</label>
 			</div>
 
-			<div  class="radioBtm">
+			<div  class="radioBtn">
 				<input type="radio" name="orderWay" value="3" id="orderWay3">
 				<label for="orderWay3">Give info by phone call</label>
 			</div>
@@ -58,13 +58,13 @@
 
 		<!--  -->
 
-			<input class="residenceInfo" type="text" name="city" readonly value="Lviv">
+			<input class="residenceInfo block-hide" type="text" name="city" readonly value="Lviv">
 
-			<input class="residenceInfo" type="text" name="street" autocomplete="on" placeholder="Street" required>
+			<input class="residenceInfo block-hide"  type="text" name="street" autocomplete="on" placeholder="Street" required>
 
-			<input class="residenceInfo" type="text" name="house" autocomplete="on" placeholder="House">
+			<input class="residenceInfo block-hide" type="text" name="house" autocomplete="on" placeholder="House">
 
-			<input class="residenceInfo" type="text" name="flat" autocomplete="on" placeholder="Flat">
+			<input class="residenceInfo block-hide" type="text" name="flat" autocomplete="on" placeholder="Flat">
 		
 
 		<!--  -->
@@ -85,7 +85,7 @@
 					<option value="t13:00">13:00</option>
 				</select>
 			
-				<select class="deliveryInfo" name="payMethod">
+				<select class="deliveryInfo block-hide" name="payMethod">
 					<option selected disabled>Payment method</option>
 					<option value="cash">Cash</option>
 					<option value="card">Card</option>
@@ -94,12 +94,12 @@
 		
 
 			
-				<input class="surrender" type="text" name="surrender" placeholder="Sum, USD">
+				<input class="surrender block-hide" type="text" name="surrender" placeholder="Sum, USD">
 
-				<div class="surrenderInfo">
+				<div class="surrenderInfo block-hide">
 					<i>Вкажіть суму оплати, щоб кур'єр мав при собі решту</i>
 				</div>
-				<div class="addComment"  onclick="openbox('box'); return false">
+				<div class="addComment">
 				+ Add comment (not important)
 				</div>
 				<div class="contract">
@@ -115,6 +115,10 @@
 
 	</form>
 
-</body>
+<!-- Add jquery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="form.js"></script>
+</body>
+
+
 </html>

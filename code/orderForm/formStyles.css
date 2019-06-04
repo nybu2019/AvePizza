@@ -88,12 +88,12 @@ input, select, textarea {
 	display: inline-block;
 }
 
-.radioBtm {
+.radioBtn {
 	font-weight: 700;
 	padding-right: 10px;
 }
 
-.radioBtm input, .radioBtm label  {
+.radioBtn input, .radioBtn label  {
 	cursor: pointer;
 }
 
