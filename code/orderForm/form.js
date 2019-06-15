@@ -10,7 +10,7 @@ document.getElementById('datePicker').value = new Date().toDateInputValue();
 
 
 $(document).ready(function() { 
-	// need .formWrap height += .showArea heigth
+	// need .formWrap height += .showArea height
 	$(".addComment").on("click", () => {
 	$("#showArea").toggle();
 });

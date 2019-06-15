@@ -220,7 +220,7 @@ aside li a:hover span {
 	display: block;
 	margin: 10px 0 auto;
 	text-align: center;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 /*Socials Sidebar*/
@@ -241,7 +241,7 @@ aside li a:hover span {
 /*Our Team style*/
 .ourTeam .teamTitle {
 	text-align: center;
-	margin-bottom: 40px;
+	margin: 40px 0;
 	font-size: 35px;
 	background-color: #EB0029;
 	color: #fff;
