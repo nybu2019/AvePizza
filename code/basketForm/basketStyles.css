@@ -1,59 +1,204 @@
-* {
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
-	min-width: 200px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .basketForm {
-	width: 30%;
+	width: 500px;
 	height: 100%;
-	background-color: darkgray;
 }
 
 .basketForm .basketHead {
-	min-width: 100px;
 	width: 100%;
 	height: 80px;
-	background-color: darkseagreen;
-
+	padding: 25px;
+	background-color: #F5F5F5;
 	align-items: center;
 	display: flex;
+	justify-content: space-between;
 }
 
 .basketForm .basketHead span {
-	font-weight: bold;
-	margin-left: 10px;
-	font-size: 50px;
-}
-
-.basketForm .basketHead .closeIcon {
-	margin-left:auto;
-	margin-right: 15px;
-	width: 50px;
-	height: 50px;
-	min-width: 50px;
-	min-height: 50px;
-	background-size: 100%;
-	background-image: url(../../resources/basketForm/close.png);
+	color: #000;
+	font-size: 24px;
+    font-weight: 900;
+	text-transform: uppercase;
 }
 
 .basketForm .basketHead .closeIcon:hover {
-	/* background-color: red; */
+	color: #EB0029; 
+	cursor: pointer;
+}
+
+.basketForm .basketBody{
+	overflow: auto;
+	width: 100%;
+	height: calc(100% - 160px);
+}
+
+.basketForm .basketBody ul li{
+	border: 1px solid black;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+
+
+.basketBody ul .pizzaItem {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	padding: 14px;
+}
+
+.pizzaItem .pizzaImage {
+	float: left;
+	margin-right: 20px;
+	width: 120px;
+	height: 120px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(../../resources/pizzaItems/pizza1.jpg);
+}
+
+.pizzaItem .editInfoItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	}
+
+.pizzaItem .editInfoItem .pizzaItemTitle, .pizzaItem .editInfoItem .deleteItem  {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.pizzaItem .editInfoItem .pizzaItemTitle {
+	margin-right: 70px;
+}
+.pizzaItem .editInfoItem .pizzaItemPrice {
+	font-weight: 900;
+	font-size: 18px;
+	color: #EB0029;
+}
+
+.pizzaItem .editInfoItem .ingredients {
+ 	font-size: 17px;
+ 	
+}
+
+.pizzaItem .editInfoItem .deleteItem {
+	font-weight: 600;
+	font-size: 16px;
+	color: #EB0029;
+
+}
+
+.pizzaItem .editInfoItem .deleteItem:hover {
+	color: red;
 	cursor: pointer;
 }
 
 
 
+.pizzaItem .divCount {
+	position: absolute;
+    top: 14px;
+    right: 0;
+    padding-right: 14px;
+	
+}
+
+.pizzaItem .divCount div {
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+}
+.pizzaItem .divCount .numbCount {
+	border: 1px solid #000;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+
+}
+
+.pizzaItem .divCount .decCount:hover, .incCount:hover {
+	color: red;
+	cursor: pointer;
+}
+
 
 .basketForm .basketBottom {
-	bottom: 0;
 	width: 100%;
 	height: 80px;
-	background-color: green;
 	font-size: 30px;
 }
 
@@ -78,7 +223,8 @@ html, body {
 
 .basketForm .basketBottom .orderAction {
 	height: 100%;
-	background-color: yellow;
+	color: white;
+	background-color: #EB0029;
 
 	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
 	display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -97,128 +243,22 @@ html, body {
 
 
 
-.basketForm .basketBody{
-	overflow: auto;
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px) {
+	.basketForm {
 	width: 100%;
-	height: calc(100% - 160px);
+}
+.pizzaItem .pizzaImage{
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
 }
 
-.basketForm .basketBody ul li{
-	border-color: black;
-	border-width: 1px;
-	border-style: solid;
-}
-
-::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar-thumb
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
-}
-
-.basketForm .basketBody ul{
-	list-style: none;
-}
-
-
-
-
-
-
-
-.pizzaItem {
-	width: 100%;
-	height: 150px;
-	background-color: aqua;
-}
-
-.pizzaItem .pizzaImage {
-	width: 120px;
-	height: 120px;
-	float: left;
-	margin: 14px;
-	background-size: 100%;
-	background-image: url(../../resources/pizzaItems/pizza1.jpg);
-}
-
-.pizzaItem .editInfoItem {
-	float: left;
-	margin: 14px;
-	width: 40%;
-}
-
-.pizzaItem .editInfoItem span {
-	display: flex;
-	font-size: 20px;
-}
-
-.pizzaItem .editInfoItem {
-	position: relative;
-	height: 120px;
-}
-
-.pizzaItem .editInfoItem .deleteItem {
-	/* position: absolute;
-	bottom: 0px; */
-	font-weight: bold;
-}
-
-.pizzaItem .editInfoItem .deleteItem:hover {
-	color: red;
-	cursor: pointer;
-}
-
-
-
-
-
-
-.pizzaItem .divCount {
-	width: 18%;
-	display: flex;
-}
-
-.pizzaItem .divCount div {
-	width: 30px;
-	height: 30px;
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	margin-top: 15px;
-	margin-left: 13px;
-}
-
-.pizzaItem .divCount div span {
-	margin-left: 8px;
-}
-
-.pizzaItem .divCount span {
-	font-size: 25px;
-	font-weight: bold;
-}
-
-.pizzaItem .divCount .decCount {
-	margin-top: 12px;
-	margin-right: -5px;
-}
-
-.pizzaItem .divCount .incCount {
-	margin-top: 14px;
-	margin-left: 5px;
-}
-
-.pizzaItem .divCount .decCount:hover, .incCount:hover {
-	color: red;
-	cursor: pointer;
 }
