@@ -85,11 +85,11 @@ html, body {
 .basketForm .basketBody{
 	overflow: auto;
 	width: 100%;
-	height: calc(100% - 160px);
+	height: calc(100% - 140px);
 }
 
 .basketForm .basketBody ul li{
-	border: 1px solid black;
+	margin-bottom: 12px;
 }
 
 ::-webkit-scrollbar-track
@@ -111,22 +111,22 @@ html, body {
 }
 
 
+.basketBody ul{
+	padding: 12px;
+}
 
 .basketBody ul .pizzaItem {
 	position: relative;
 	width: 100%;
-	height: 150px;
-	padding: 14px;
+	height: 100%;
 }
 
 .pizzaItem .pizzaImage {
-	float: left;
-	margin-right: 20px;
-	width: 120px;
-	height: 120px;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-image: url(../../resources/pizzaItems/pizza1.jpg);
+	position: absolute;
+    top: 0;
+    left: 0;
+	width: 100px;
+	height: 100px;
 }
 
 .pizzaItem .editInfoItem {
@@ -134,7 +134,12 @@ html, body {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
-	}
+	padding-left: 120px;
+}
+
+.pizzaItem .editInfoItem span{
+	padding-bottom: 10px;
+}
 
 .pizzaItem .editInfoItem .pizzaItemTitle, .pizzaItem .editInfoItem .deleteItem  {
 	font-weight: bold;
@@ -144,6 +149,7 @@ html, body {
 .pizzaItem .editInfoItem .pizzaItemTitle {
 	margin-right: 70px;
 }
+
 .pizzaItem .editInfoItem .pizzaItemPrice {
 	font-weight: 900;
 	font-size: 18px;
@@ -152,29 +158,19 @@ html, body {
 
 .pizzaItem .editInfoItem .ingredients {
  	font-size: 17px;
- 	
 }
 
 .pizzaItem .editInfoItem .deleteItem {
 	font-weight: 600;
 	font-size: 16px;
 	color: #EB0029;
-
-}
-
-.pizzaItem .editInfoItem .deleteItem:hover {
-	color: red;
 	cursor: pointer;
 }
 
-
-
 .pizzaItem .divCount {
 	position: absolute;
-    top: 14px;
+    top: 0;
     right: 0;
-    padding-right: 14px;
-	
 }
 
 .pizzaItem .divCount div {
@@ -182,12 +178,20 @@ html, body {
 	display: inline-block;
 	font-size: 20px;
 }
+
+.pizzaItem .divCount .decCount {
+	font-size: 32px;
+}
+
+.pizzaItem .divCount .incCount {
+	font-size: 26px;
+}
+
 .pizzaItem .divCount .numbCount {
 	border: 1px solid #000;
 	width: 30px;
 	height: 30px;
 	padding: 5px;
-
 }
 
 .pizzaItem .divCount .decCount:hover, .incCount:hover {
@@ -195,11 +199,12 @@ html, body {
 	cursor: pointer;
 }
 
-
 .basketForm .basketBottom {
 	width: 100%;
-	height: 80px;
-	font-size: 30px;
+	height: 60px;
+	font-size: 26px;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .basketForm .basketBottom .orderPrice {
@@ -210,7 +215,7 @@ html, body {
 
 	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
 	display: -ms-flexbox;  /* TWEENER - IE 10 */
-	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: -webkit-flex;  NEW - Safari 6.1+. iOS 7.1+, BB10 
 	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
 
 	justify-content: center;
@@ -225,6 +230,7 @@ html, body {
 	height: 100%;
 	color: white;
 	background-color: #EB0029;
+	cursor: pointer;
 
 	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
 	display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -235,20 +241,6 @@ html, body {
 	align-items: center;
 }
 
-.basketForm .basketBottom .orderAction {
-	cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 575px) {
@@ -256,9 +248,30 @@ html, body {
 	width: 100%;
 }
 .pizzaItem .pizzaImage{
-    margin-right: 10px;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
+.pizzaItem .editInfoItem {
+	padding-left: 100px;
+}
+
+.basketForm .basketHead {
+	height: 60px;
+}
+
+.basketForm .basketHead span {
+	font-size: 18px;
+}
+
+.basketForm .basketBottom {
+	height: 50px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.basketForm .basketBody{
+	height: calc(100% - 110px);
+}
+
 
 }
