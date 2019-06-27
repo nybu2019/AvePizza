@@ -10,30 +10,32 @@ document.getElementById('datePicker').value = new Date().toDateInputValue();
 
 
 $(document).ready(function() { 
-	// need .formWrap height += .showArea height
 	$(".addComment").on("click", () => {
-	$("#showArea").toggle();
+		$("#showArea").toggle();
 });
 
 	// Need to change switch. I think about it
 	$(".take-yourself").on("click", () => {
-	$(".block-hide").hide();
-	$(".takeFrom").show();
-	
-	$(".deliveryInfo").css({
-		width: "140px",
-		paddingRight: "0"
+		$(".formWrap > *:not(#showArea)").show();
+		$(".block-hide").hide();
+		$(".phoneDiv").css("width", "308px");
+		$(".deliveryInfo").css({
+			width: "140px",
+			paddingRight: "0"
 	});
-
-	$(".formWrap").css("height", "420px");
+	
 });
 
  	$(".courier-delivery").on("click", () => {
-	$(".block-hide").show();
-	$(".takeFrom").hide();
-	$(".deliveryInfo").css("width", "200px");
-	$(".formWrap").css("height", "650px");
-	
+		$(".takeFrom").hide();
+		$(".formWrap > *:not(.takeFrom, #showArea)").show();
+		$(".phoneDiv").css("width", "308px");
+		$(".deliveryInfo").css("width", "200px");
 	 });
+
+ 	$(".infoByCall").on("click", () => {
+ 		$(".formWrap > *:not(.phoneDiv, .block1)").hide();
+ 		$(".phoneDiv").css("width", "100%");
+ 	})
 
 });

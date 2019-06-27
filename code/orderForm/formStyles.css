@@ -77,11 +77,15 @@ input, select, textarea {
 }
 
 .formWrap {
-	height: 650px;
+	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.formWrap > * {
+	margin-bottom: 40px;
 }
 
 .block1 div {
@@ -93,7 +97,7 @@ input, select, textarea {
 	padding-right: 10px;
 }
 
-.radioBtn input, .radioBtn label  {
+.radioBtn input, .radioBtn label, .addNews input, .addNews label, select  {
 	cursor: pointer;
 }
 
@@ -120,6 +124,7 @@ input, select, textarea {
 .addNews {
 	font-weight: 700;
 	width: 308px;
+
 }
 
 .addNews:hover {
@@ -185,7 +190,7 @@ input, select, textarea {
 		padding: 20px;
 		margin: 0;
 	}
-	.formWrap > * {
+	.panel .formWrap > * {
 		width: 100%;
 		margin-bottom: 20px;
 	}
