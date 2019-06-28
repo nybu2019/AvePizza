@@ -17,20 +17,20 @@
 		<div class="formWrap">
 
 		<div class="block1">
-			<div class="radioBtn courier-delivery ">
+			<label class="radioBtn courier-delivery" for="orderWay1">
 				<input type="radio" name="orderWay" value="1" id="orderWay1" checked>
-				<label for="orderWay1">Courier delivery</label>
-			</div>
+				Courier delivery
+			</label>
 
-			<div  class="radioBtn take-yourself">
+			<label class="radioBtn take-yourself" for="orderWay2">
 				<input type="radio" name="orderWay" value="2" id="orderWay2">
-				<label for="orderWay2">Take it yourself</label>
-			</div>
-
-			<div  class="radioBtn infoByCall">
+				Take it yourself
+			</label>
+			
+			<label  class="radioBtn infoByCall" for="orderWay3">
 				<input type="radio" name="orderWay" value="3" id="orderWay3">
-				<label for="orderWay3">Give info by phone call</label>
-			</div>
+				Give info by phone call
+			</label>
 
 		</div>
 		<!-- Customer info -->
@@ -41,7 +41,7 @@
 			
 
 			<div class="phoneDiv">
-				<span>+38</span>
+				<span class="phone-code-uk">+38</span>
 				<input class="phoneInpt" type="tel" autocomplete="on" required name="phone"
 				placeholder="(099)123-4567">
 			</div>
@@ -51,10 +51,11 @@
 				<input class="customerInf" type="email" autocomplete="on" required name="email" placeholder="Your email (not important)">
 			</div>
 
-			<div class="addNews">
+			<label class="addNews" for="subscribe">
 				<input type="checkbox" id="subscribe">
-				<label for="subscribe">Receive news and special offers</label>
-			</div>
+						Receive news and special offers
+				</label>
+			
 		
 		<div class="decorLine"><hr></div>
 

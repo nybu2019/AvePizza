@@ -93,15 +93,16 @@ input, select, textarea {
 }
 
 .radioBtn {
+	display: inline-block;
 	font-weight: 700;
-	padding-right: 10px;
+	margin-right: 10px;
 }
 
-.radioBtn input, .radioBtn label, .addNews input, .addNews label, select  {
+.radioBtn input, label, .addNews input, .addNews label, select  {
 	cursor: pointer;
 }
 
-.block1 div:hover {
+.block1 label:hover {
 	color: #EB0029;
 }
 
@@ -124,7 +125,6 @@ input, select, textarea {
 .addNews {
 	font-weight: 700;
 	width: 308px;
-
 }
 
 .addNews:hover {
@@ -194,13 +194,18 @@ input, select, textarea {
 		width: 100%;
 		margin-bottom: 20px;
 	}
-	.customerInf, .phoneDiv{
+	.customerInf, .phoneDiv, label{
 		width: 100%;
 	}
 
-	.radioBtn {
+	label.radioBtn {
 		margin-bottom: 20px;
 	}
+
+	.phoneInpt {
+		padding-right: 0;
+	}
+
 	.formWrap {
 		height: 100%;
 	}
