@@ -67,6 +67,18 @@ a {
 	border-right: 1px #000 solid;
 }
 
+.shopBasket div {
+	position: absolute;
+	color: white;
+	font-size: 15px;
+	margin-left: 30px;
+	margin-top: -15px;
+	background-color: black;
+	border-radius: 50%;
+	width: 15px;
+	height: 20px;
+}
+
 .boxSum span {
 	color: #fff;
 	font-size: 26px;
@@ -93,45 +105,11 @@ a {
 }
 
 
-
-/*
-#headerBg{
-	background-color: #8D7166;
-	height: 370px;
-	width: 100%;
-	position: relative;
-}
-
-#headerText{
-	position: absolute;
-	width: auto;
-	height: 200px;
-	font-size: 35px;
-	right: 70px;
-	text-align: right;
-	top: 70px;
-
-}*/
-
-/*#headerBg button {
-	background-color: #EB0029;
-	color: #F9FFFF;
-	font-weight: 550;
-	outline: none;
-	padding: 10px 18px;
-	position: absolute;
-	top: 260px;
-	right: 70px;
-	box-shadow: 5px 5px 10px #000;
-	cursor: pointer;
-}*/
-
 .textLogo {
 	font-size: 45px;
 	color: #fff;
 	font-style: italic;
 }
-
 
 
 /*Filter*/
@@ -174,7 +152,6 @@ aside {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-
 }
 
 
@@ -247,10 +224,9 @@ aside li a:hover span {
 	color: #fff;
 	padding: 10px;
 	text-shadow: 2px 2px 0px  #000;
-
 }
 
-.mainCircule {
+.ourTeam .mainCircule {
 	box-sizing: border-box;
 	width: 250px;
 	height: 250px;
@@ -258,14 +234,37 @@ aside li a:hover span {
 	margin-bottom: 30px;
 	position: absolute;
 	background-color: #000;
-
 }
 
-.smallCircule:hover {
+ .ourTeam .mainCircule .personal {
+	width: 100%;
+	position: absolute;
+	top: 260px;
+	text-align: center;
+}
+
+.ourTeam .mainCircule .personal > *{
+	margin-bottom: 8px;
+}
+
+.mainCircule .personal .personal-name {
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+.mainCircule .personal .work-title {
+	font-size: 21px;
+}
+
+.mainCircule .personal .personal-info {
+	font-size: 18px;
+}
+
+.ourTeam .mainCircule .smallCircule:hover {
 	background-color: #fff;
 }
 
-.smallCircule .appLink {
+.ourTeam .mainCircule .smallCircule .appLink {
 	display: block;
 	width: 40px;
 	height: 40px;
@@ -273,27 +272,27 @@ aside li a:hover span {
 
 }
 
-.smallCircule .fa-instagram {
+.ourTeam .mainCircule .smallCircule .fa-instagram {
 	font-size: 22px;
 	font-weight: 600;
 }
 
-.teamItem1 {
+.ourTeam .teamItem1 {
 	left: 20%;
 	border: 2px solid #4DB995;
 }
 
-.teamItem2 {
+.ourTeam .teamItem2 {
 	left: 47%;
 	border: 2px solid #126EBC;
 }
 
-.teamItem3 {
+.ourTeam .teamItem3 {
 	right: 10%;
 	border: 2px solid #AFBC78;
 }
 
-.tperson1 {
+.ourTeam .mainCircule .team-member-photo {
 	width: 220px;
 	height: 220px;
 	position: absolute;
@@ -301,7 +300,7 @@ aside li a:hover span {
 	top: 5%;
 }
 
-.facebook, .twitter, .in, .google {
+ .mainCircule .facebook,  .mainCircule .twitter,  .mainCircule .in,  .mainCircule .google {
 	width: 40px;
 	height: 40px;
 	border: 2px solid #4DB995;
@@ -312,11 +311,11 @@ aside li a:hover span {
 
 }
 
-.teamItem3 .smallCircule {
+.ourTeam .teamItem3 .smallCircule {
 	border: 2px solid #F2AA00;
 }
 
-.teamItem2 .smallCircule {
+.ourTeam .teamItem2 .smallCircule {
 	border: 2px solid #126EBC;
 }
 
@@ -324,54 +323,44 @@ aside li a:hover span {
 
 /*position app*/
 
-.facebook {
+.ourTeam .mainCircule .facebook {
 	right: 10%;
 }
 
-.twitter {
+.ourTeam .mainCircule .twitter {
 	right: -7%;
 	top: 25%;
 }
 
-.in {
+.ourTeam .mainCircule .in {
 	right: -8%;
 	top: 56%;
 }
 
-.google {
+.ourTeam .mainCircule .google {
 	right: 10%;
 	top: 80%;
 }
 
-.teamItem1 .fab {
+.ourTeam .teamItem1 .fab {
 	z-index: 1;
 	color: #4DB995;
 }
 
-.teamItem2 .fab {
+.ourTeam .teamItem2 .fab {
 	z-index: 1;
 	color: #126EBC;
 }
 
-.teamItem3 .fab {
+.ourTeam .teamItem3 .fab {
 	z-index: 1;
 	color: #F2AA00;
 }
 
-.shopBasket div {
-	position: absolute;
-	color: white;
-	font-size: 15px;
-	margin-left: 30px;
-	margin-top: -15px;
-	background-color: black;
-	border-radius: 50%;
-	width: 15px;
-	height: 20px;
-}
+/*FOOTER*/
 
 footer {
-	padding-top: 250px;
+	padding-top: 415px;
 	width: 100%;
 	height: 600px;
 }
@@ -382,12 +371,10 @@ footer .wrap {
 	background-color: #000;
 }
 
-.newsLetter {
-	height: 100px;
+footer .wrap .newsLetter {
 	width: 100%;
 	background-color: #EB0029;
-	padding-top: 70px;
-
+	padding: 65px 50px;
 }
 
 footer .wrap .mailChimp {
@@ -407,9 +394,7 @@ footer .wrap .mailChimp {
 
 .mailChimp li h2 .fa-envelope {
 	padding-right: 10px;
-
 }
-
 
 .mailChimp li p {
 	padding-right: 40px;
@@ -447,7 +432,6 @@ footer .wrap .mailChimp {
 	display: flex;
 	justify-content: space-around;
 	padding-top: 20px;
-
 }
 
 .footerInfo .about {
@@ -527,7 +511,6 @@ footer .wrap .mailChimp {
 
 .instagramPhoto .instagItem:hover {
 	transform: scale(1.5);
-
 }
 
 #map {
