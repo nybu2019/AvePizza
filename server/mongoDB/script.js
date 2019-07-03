@@ -1,5 +1,6 @@
 const mongoDBApi = require("./mongoDBApi.js");
 
-mongoDBApi.initDatabase();
-mongoDBApi.showPizzasContent();
+// mongoDBApi.initDatabase();
+// mongoDBApi.fillDatabase();
 
+mongoDBApi.showPizzasContent();
