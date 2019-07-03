@@ -1,0 +1,44 @@
+{
+    "pizzas": [
+        {
+            "title": "Neapolitan pizza",
+            "price": 127,
+			"type" : "meat",
+            "config": "550g, 35sm",
+            "description": "Try so much and drink whiskey with Korinetska in bathroom",
+            "imagePath": "pizzaItems/pizza1.jpg"
+        },
+		{
+            "title": "Neapolitan pizza",
+            "price": 127,
+			"type" : "meat",
+            "config": "550g, 35sm",
+            "description": "Try so much and drink whiskey with Korinetska in bathroom",
+            "imagePath": "pizzaItems/pizza2.jpg"
+        },
+		{
+            "title": "Neapolitan pizza",
+            "price": 127,
+			"type" : "cheese",
+            "config": "550g, 35sm",
+            "description": "Try so much and drink whiskey with Korinetska in bathroom",
+            "imagePath": "pizzaItems/pizza3.jpg"
+        },
+		{
+            "title": "Neapolitan pizza",
+            "price": 127,
+			"type" : "vegetarian",
+            "config": "550g, 35sm",
+            "description": "Try so much and drink whiskey with Korinetska in bathroom",
+            "imagePath": "pizzaItems/pizza4.jpg"
+        },
+		{
+            "title": "Neapolitan pizza",
+            "price": 127,
+			"type" : "fish",
+            "config": "550g, 35sm",
+            "description": "Try so much and drink whiskey with Korinetska in bathroom",
+            "imagePath": "pizzaItems/pizza5.jpg"
+        }
+    ]
+}
