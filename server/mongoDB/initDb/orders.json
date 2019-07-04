@@ -1,0 +1,22 @@
+{
+    "orders": [
+        {
+            "title": "Neapolitan pizza",
+            "price": 127,
+			"type" : "meat",
+            "config": "550g, 35sm",
+            "description": "Try so much and drink whiskey with Korinetska in bathroom",
+            "imagePath": "pizzaItems/pizza1.jpg",
+	    "count": 1
+        },
+		{
+            "title": "Neapolitan pizza",
+            "price": 127,
+			"type" : "meat",
+            "config": "550g, 35sm",
+            "description": "Try so much and drink whiskey with Korinetska in bathroom",
+            "imagePath": "pizzaItems/pizza2.jpg",
+    	    "count": 3
+        }
+    ]
+}
