@@ -1,0 +1,5 @@
+{
+	"dbName": "pizzasDatabase1",
+	"pizzasCollectionName": "pizzas",
+	"orderCollectionName": "orders"
+}
