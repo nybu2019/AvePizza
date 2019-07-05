@@ -3,6 +3,14 @@ const mongoDBApi = require("../mongoDB/mongoDBApi.js");
 const express = require("express");
 const router = express.Router();
 
+let allPizzas = null;
+function readPizzasFromDatabase() {
+	mongoDBApi.getPizzasFormDatabase()
+    .then(function(data) {
+        allPizzas = data;
+    });   
+}
+
 function readFile(fileName) {
     return fs.readFileSync(__dirname + "/../../code/pizzaItems/" + fileName, 'utf8');
 }
@@ -23,22 +31,21 @@ router.get("/pizzaItemsStyles.css", function(req, res) {
 
 router.get("/pizzas/:type", function(req, res) {
     res.writeHead(200, {"Content-Type": "application/json"});
-
-    mongoDBApi.getPizzasFormDatabase()
-    .then(function(allPizzas) {
-        if (req.params.type === "all") {
-            res.write(JSON.stringify(allPizzas));
-        } else
-        {
-            const typePizzas = allPizzas.filter(function(element) {
-                return element.type === req.params.type;
-            });
-            res.write(JSON.stringify(typePizzas));
-        }
     
-        res.end();
-    });    
+	if (req.params.type === "all") {
+		res.write(JSON.stringify(allPizzas));
+	} else
+	{
+		const typePizzas = allPizzas.filter(function(element) {
+			return element.type === req.params.type;
+		});
+		res.write(JSON.stringify(typePizzas));
+	}
+
+	res.end();
+     
 });
 
+readPizzasFromDatabase();
 
 module.exports = router;
