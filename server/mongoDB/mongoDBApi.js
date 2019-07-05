@@ -3,7 +3,7 @@ const MongoClient = require("mongodb").MongoClient;
 
 const url = "mongodb://localhost:27017/";
 
-const databaseTools = fs.readFileSync("./databaseTools.json");  
+const databaseTools = fs.readFileSync("mongoDB/databaseTools.json");  
 const {dbName, pizzasCollectionName, orderCollectionName} = JSON.parse(databaseTools);
 
 
