@@ -2,15 +2,16 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ave Pizza</title>
 
-		<!--Підключаємо css бібліотеку normalize (нормалізація стилів)-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="shortcut icon" href="../../resources/imagesIndex/pizza-Icon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="./mainStyles.css">
 		<link rel="stylesheet" type="text/css" href="../banner/bannerStyles.css">
 		<link rel="stylesheet" href="../pizzaItems/pizzaItemsStyles.css">
+
 	</head>
 
 	<body>
@@ -42,7 +43,7 @@
 				<li class="phoneNumber">
 					<div>
 						<i class="fas fa-phone"></i>
-						<select  title="Call to us">
+						<select class="mobile-phone" title="Call to us">
 						<option>+38097444325</option>
 						<option>+38097444325</option>
 						<option>+38097444325</option>
@@ -81,7 +82,7 @@
 
 	<!-- Sidebar -->
 
-	<aside >
+	<aside class="main-sidebar">
 
 
 		<a class="logo" href="#" title="Back to main page">
@@ -375,7 +376,10 @@
 </footer>
 
 </body>
+	<script src="jq mainAction.js"></script>
 	<script src="./mainAction.js"></script>
 	<script src="../banner/bannerAction.js"></script>
 	<script src="../pizzaItems/pizzaItemsAction.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+	</script>
 </html>
