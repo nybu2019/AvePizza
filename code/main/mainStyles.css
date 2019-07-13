@@ -130,31 +130,49 @@ a {
 	font-size: 14px;
 }
 
-.dropdown-arrow {
+.callBack .div-contact .dropdown-arrow {
 	position: absolute;
 	top: 50%;
 	margin-top: -16.25px;
 	right: -46px;
 }
 
-.dropdown-arrow .fa-sort-down {
+.callBack .div-contact .dropdown-arrow .fa-sort-down {
 	font-size: 26px;
 	cursor: pointer;
 }
 
-.dropdown-arrow .fa-sort-down:hover {
+.callBack .div-contact .dropdown-arrow .fa-sort-down:hover {
 	color: #EB0029;
 }
 
-.dropdown {
+.callBack .div-contact .dropdown {
+	display: none;
 	position: absolute;
 	width: 190px;
 	background-color: white;
 	padding: 10px;
 }
+.div-contact .dropdown .line-separator, .div-contact .dropdown form .callback-number  {
+	margin: 10px 0;
+}
 
-.dropdown form .callback-number {
-	
+.div-contact .dropdown form .callback-number {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px;
+	font-size: 17px;
+	outline: none;
+}
+
+.div-contact .dropdown form .submit-btn {
+	padding: 14px;
+	width: 100%;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #EB0029;
+	border: none;
 }
 
 
