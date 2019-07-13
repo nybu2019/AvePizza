@@ -176,9 +176,6 @@ a {
 }
 
 
-
-
-
 @media screen and (max-width: 768px) {
 	.callBack select, .main-sidebar {
 		display: none;
@@ -455,7 +452,6 @@ footer .wrap {
 }
 
 footer .wrap .newsLetter {
-	width: 100%;
 	background-color: #EB0029;
 	padding: 65px 50px;
 }
