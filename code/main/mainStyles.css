@@ -34,7 +34,7 @@ a {
 
 }
 
-.headerNav li a, div.shopSum, .title h2, .phoneNumber div {
+.headerNav .shopBasket a, div.shopSum, .title h2, .callBack {
   display: block;
   text-align: center;
   padding: 20px 30px;
@@ -46,6 +46,12 @@ a {
 	height: 75px;
 }
 
+.textLogo {
+	font-size: 45px;
+	color: #fff;
+	font-style: italic;
+}
+
 .title {
     float: left !important;
 }
@@ -55,7 +61,6 @@ a {
 	font-size: 24px;
     font-weight: 900;
     text-transform: uppercase;
-
 }
 
 .boxSum, .shopBasket {
@@ -85,36 +90,79 @@ a {
 	font-weight: 740;
 }
 
-.fa-shopping-basket{
+.fa-shopping-basket {
 	font-size: 30px;
 	color: #fff;
-
 }
 
-.phoneNumber select {
-	border: none;
-	font-size: 22px;
-	outline: none;
-	cursor: pointer;
-}
-
-
-.fa-phone{
+.fa-phone {
 	color: #000;
 	font-size: 25px;
 	cursor: pointer;
 }
 
+/*CallBack in navigation*/
 
-.textLogo {
-	font-size: 45px;
-	color: #fff;
-	font-style: italic;
+.callBack {
+	padding-right: 80px;
+}
+
+.callBack .div-contact {
+	display: inline-block;
+	position: relative;
+}
+
+.callBack .div-contact p {
+	color: #A1A1A1;
+}
+
+.callBack .div-contact .number {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 3px;
+}
+
+.callBack .div-contact .fa-clock {
+	padding: 0;
+	margin-right: 5px;
+	color: #A1A1A1;
+	font-size: 14px;
+}
+
+.dropdown-arrow {
+	position: absolute;
+	top: 50%;
+	margin-top: -16.25px;
+	right: -46px;
+}
+
+.dropdown-arrow .fa-sort-down {
+	font-size: 26px;
+	cursor: pointer;
+}
+
+.dropdown-arrow .fa-sort-down:hover {
+	color: #EB0029;
+}
+
+.dropdown {
+	position: absolute;
+	width: 190px;
+	background-color: white;
+	padding: 10px;
+}
+
+.dropdown form .callback-number {
+	
 }
 
 
+
+
+
 @media screen and (max-width: 768px) {
-	.phoneNumber select, .main-sidebar {
+	.callBack select, .main-sidebar {
 		display: none;
 	}
 
