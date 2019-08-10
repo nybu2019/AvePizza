@@ -244,6 +244,10 @@ a {
 	.pizzaFilter span, #filterText {
 		display: none;
 	}
+	
+	.filter {
+		justify-content: center;
+	}
 
 }
 
@@ -469,7 +473,7 @@ aside li a:hover span {
 footer {
 	padding-top: 415px;
 	width: 100%;
-	height: 600px;
+	min-height: 600px;
 }
 
 footer .wrap {
@@ -493,7 +497,6 @@ footer .wrap .mailChimp {
 .mailChimp li h2 {
 	color: #fff;
 	font-size: 35px;
-	padding-left: 20px;
 	padding-right: 40px;
 	padding-bottom: 20px;
 }
@@ -539,11 +542,12 @@ footer .wrap .mailChimp {
 	background-color: #fff;
 }
 
-.footerInfo {
-	height: 300px;
+.footerInfo{
+	min-height: 300px;
 	display: flex;
 	justify-content: space-around;
-	padding-top: 20px;
+	flex-wrap: wrap;
+	padding: 20px 0;
 }
 
 .footerInfo .about {
